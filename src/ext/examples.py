@@ -99,6 +99,9 @@ def create_examples(examples):
                 else:
                     sourcelines.append('    ' + line)
 
+        # TODO: Temporarily disable all plotting and rely on static images or videos instead
+        plot = False
+
         # Add desciprion
         lines.extend(doclines)
         lines.append('')
