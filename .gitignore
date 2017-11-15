@@ -1,0 +1,6 @@
+.*
+!.gitignore
+!.gitlab-ci.yml
+build
+__pycache__
+

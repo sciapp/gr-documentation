@@ -1,3 +1,3 @@
 [submodule "python-gr"]
 	path = python-gr
-	url = gitlab@iffgit.fz-juelich.de:Scientific-IT-Systems/python-gr.git
+	url = https://github.com/sciapp/python-gr.git

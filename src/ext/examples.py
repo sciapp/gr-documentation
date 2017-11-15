@@ -25,10 +25,9 @@ def get_example_filenames(examples_dir):
             filename = os.path.join(dirpath, fname)
             name = filename[len(examples_dir):].lstrip('/\\')[:-3]
             name = name.replace('\\', '/')
-            f = open(filename, 'r')
-            line = f.readline()
-            f.close()
-            if line.startswith('#!/usr/bin/env python'):
+            with open(filename, 'rb') as f:
+                content = f.read()
+            if content.startswith('#!/usr/bin/env python\n'.encode('ascii')):
                 yield filename, name
 
 

@@ -1,0 +1,13 @@
+pages:
+    image: ubuntu:16.04
+    only:
+        - master
+    script:
+        - apt-get update -y
+        - apt-get install -y python-pip virtualenv make git libxt6 libxrender1 libgl1-mesa-glx
+        - git submodule update --init
+        - make
+        - mv build public
+    artifacts:
+        paths:
+        - public
