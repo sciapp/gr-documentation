@@ -4,7 +4,7 @@ pages:
         - master
     script:
         - apt-get update -y
-        - apt-get install -y python3-venv virtualenv make git libxt6 libxrender1 libgl1-mesa-glx
+        - apt-get install -y python3-venv virtualenv make git libxt6 libxrender1 libgl1-mesa-glx doxygen
         - git submodule update --init
         - make
         - mv build public

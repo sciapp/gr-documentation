@@ -14,6 +14,8 @@ html: .FORCE
 	cd python-gr && $(PYTHON) setup.py sdist
 	$(PIP) install python-gr/dist/gr-*.tar.gz
 	$(PIP) install -r requirements.txt
+	mkdir $(BUILDDIR)
+	doxygen Doxyfile
 	mkdir -p $(SOURCEDIR)/examples
 	$(SPHINXBUILD) -b html $(SPHINXOPTS) $(SOURCEDIR) $(BUILDDIR)
 

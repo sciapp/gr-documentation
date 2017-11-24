@@ -14,6 +14,7 @@
 
 import sys
 import os
+import datetime
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -37,6 +38,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
+    'breathe',
     'gr_ext',
 ]
 
@@ -54,7 +56,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'GR Framework'
-copyright = '2011 - 2014 Josef Heinen and the GR development team'
+copyright = '2011 - {} Josef Heinen and the GR development team'.format(datetime.date.today().year)
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -287,3 +289,5 @@ intersphinx_mapping = {
     'https://docs.scipy.org/doc/scipy/reference': None
 }
 
+breathe_projects = { "gr": os.path.abspath(os.path.join(os.path.dirname(__file__), '../build/doxygen/xml/')) }
+breathe_default_project = "gr"
