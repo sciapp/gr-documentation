@@ -1,4 +1,4 @@
-GR Reference
+gr Reference
 ------------
 
 Output Functions

@@ -1,4 +1,4 @@
-GR3 Reference
+gr3 Reference
 -------------
 
 General Functions
