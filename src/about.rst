@@ -1,18 +1,6 @@
 About the GR Framework
 ======================
 
-Introduction
-------------
-
-*GR* is a universal framework for cross-platform visualization applications.
-It offers developers a compact, portable and consistent graphics library for
-their programs. Applications range from publication quality 2D graphs to the
-representation of complex 3D scenes.
-
-.. image:: media/screenshots.png
-
-----
-
 *GR* is essentially based on an implementation of a Graphical Kernel System (GKS)
 and *OpenGL*. As a self-contained system it can quickly and easily be integrated
 into existing applications (i.e. using the ``ctypes`` mechanism in
@@ -53,68 +41,23 @@ and *Julia*, such as `IPython <https://ipython.org>`_ and
 A simple *IPython* notebook example (converted to HTML5) can be found
 `here <https://pgi-jcns.fz-juelich.de/pub/doc/700K_460.html>`_.
 
-Getting Started
----------------
-
-If you want to get the very latest version you can clone the
-`GR repository <https://github.com/jheinen/gr>`_ from GitHub::
-
-    git clone https://github.com/jheinen/gr
-
-The *GR* framewok is also available on PyPI:
-`https://pypi.python.org/pypi/gr <https://pypi.python.org/pypi/gr/>`_
-
-The installation method depends on the environment in which GR will
-be used. For further information please refer to the :doc:`installation documentation <installation>`.
-
-Once you have installed the GR framework, in Python you simply need to type::
-
-    from gr import pygr
-    pygr.plot([0,1,4],[3,2,5])
-
-At this point, you should browse the gallery to get an impression
-of GR's capabilities.
-
-For the Julia programming language an official
-`GR.jl <https://github.com/jheinen/GR.jl>`_ package has been registered.
-You can add the GR framework to your Julia installation with the
-``Pkg.add()`` function:
-
-.. code-block:: julia
-
-    Pkg.add("GR")
-    ...
-    using GR
-    plot([0,1,4],[3,2,5])
-
-Documentation
--------------
-
-This is the documentation for the GR framework.
-
-*  :doc:`GR Reference <gr>`
-*  :doc:`GR3 Reference <gr3>`
-*  :doc:`Tutorials <tutorials/index>`
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   installation.rst
-   python.rst
-   credits.rst
-   references.rst
-   imprint.rst
-
 **Other resources**
 
 * The GR framework has already been presented in a talk at PyCon DE `2012 <https://2012.de.pycon.org/programm/schedule/sessions/54>`_ and `2013 <https://2013.de.pycon.org/schedule/sessions/45/>`_, during a `poster session <https://us.pycon.org/2013/schedule/presentation/158/>`_ at PyCon US 2013, at `PythonCamps 2013 <https://josefheinen.de/rasberry-pi.html>`_ in Cologne, at EuroPython `2014 <https://ep2014.europython.eu/en/schedule/sessions/86/>`_ and `2015 <https://ep2015.europython.eu/conference/talks/speeding-up-matplotlib-with-gr>`_, at `EuroSciPy 2015 <https://www.euroscipy.org/2015/schedule/presentation/12/>`_, JuliaCon `2015 <https://juliacon.org/2015/>`_ and `2016 <https://juliacon.org/abstracts.html#GR>`_, and `SciPy 2016 <https://scipy2016.scipy.org/ehome/146062/332965/>`_. The are also HTML versions of the talks at `PyCon.DE 2013 <https://pgi-jcns-ta.fz-juelich.de/pub/doc/PyCon_DE_2013>`_, EuroPython `2014 <https://pgi-jcns-ta.fz-juelich.de/pub/doc/EP14>`_ and `2015 <https://pgi-jcns.fz-juelich.de/pub/doc/EP15/talk>`_, JuliaCon `2015 <https://pgi-jcns-ta.fz-juelich.de/pub/doc/JuliaCon_2015/html>`_ and `2016 <https://pgi-jcns-ta.fz-juelich.de/pub/doc/JuliaCon_2016/html>`_, `EuroSciPy 2015 <https://pgi-jcns.fz-juelich.de/pub/doc/EuroSciPy_2015/00-talk>`_ and `SciPy 2016 <https://pgi-jcns.fz-juelich.de/pub/doc/SciPy_2016/html>`_.
 
 * There is an active developer group and :doc:`list <credits>` of people who have made significant contributions. More information can be found :doc:`here <references>`.
 
-Indices and tables
-------------------
+Workstation Types
+-----------------
 
-* :ref:`genindex`
-* :ref:`search`
+The layered architecture of GR and GKS allow the use of a wide variety of GUI toolkits and file formats using so-called workstations. You can select the workstation by setting the ``GKS_WSTYPE`` environment variable or by explicitly opening it using ``gks_openws``.
 
+========== ============ ===========
+Plugin     GKS_WSTYPE   Description
+========== ============ ===========
+*built-in* pdf          PDF file
+*built-in* ps           PostScript file
+cairo      png          4096×4096 PNG file
+========== ============ ===========
+
+.. note:: List all available workstation types and output formats

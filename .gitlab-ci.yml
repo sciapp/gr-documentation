@@ -4,7 +4,12 @@ pages:
         - master
     script:
         - apt-get update -y
-        - apt-get install -y python3-venv virtualenv make git libxt6 libxrender1 libgl1-mesa-glx doxygen
+        - apt-get install -y python3-venv make git curl libxt6 libxrender1 libgl1-mesa-glx doxygen
+        - curl -LO https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.1-linux-x86_64.tar.gz
+        - tar xzf julia-*.tar.gz
+        - rm -rf julia-*.tar.gz
+        - mv julia-* /usr/local/julia
+        - ln -s /usr/local/julia/bin/julia /usr/local/bin/julia
         - git submodule update --init
         - make
         - mv build public

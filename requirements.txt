@@ -19,3 +19,4 @@ Sphinx==1.6.5
 sphinx-rtd-theme==0.2.4
 sphinxcontrib-websupport==1.0.1
 urllib3==1.22
+-e git://github.com/bastikr/sphinx-julia.git#egg=Sphinx-Julia

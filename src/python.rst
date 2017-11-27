@@ -4,7 +4,7 @@ Python Package gr
 Installation
 ------------
 
-GR is available on `PyPI <https://pypi.python.org/pypi/gr/>`_ and recommend installing it with pip:
+GR is available on `PyPI <https://pypi.python.org/pypi/gr/>`_ and we recommend installing it with pip:
 
 .. code-block:: bash
 
