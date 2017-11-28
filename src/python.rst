@@ -33,6 +33,11 @@ After installing GR, you can try it out by creating a simple plot:
    from gr import pygr
    pygr.plot(list(x**2 for x in range(100)))
 
+Tutorials
+---------
+
+You can find several tutorials on using GR in the :doc:`Tutorials <tutorials/index>` section.
+
 Examples
 --------
 

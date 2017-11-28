@@ -37,6 +37,10 @@ After installing GR, you can try it out by creating a simple plot:
     using GR
     plot([0,1,4],[3,2,5])
 
+Tutorials
+---------
+
+You can find several tutorials on using GR in the :doc:`Tutorials <tutorials/index>` section.
 
 API Reference
 -------------

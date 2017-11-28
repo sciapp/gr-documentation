@@ -63,6 +63,11 @@ After installing GR, you can try it out by creating a simple plot:
        return 0;
    }
 
+Tutorials
+---------
+
+You can find several tutorials on using GR in the :doc:`Tutorials <tutorials/index>` section.
+
 API Reference
 -------------
 
