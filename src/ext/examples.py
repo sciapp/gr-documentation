@@ -65,6 +65,8 @@ def create_examples(examples):
 
         # Create title
         lines = []
+        lines.append(':orphan:')
+        lines.append('')
         lines.append(name)
         lines.append('-' * len(lines[-1]))
         lines.append('')
@@ -163,10 +165,8 @@ def create_toc(contents):
     lines.append('')
 
     # Add entry for each example that we know
-    lines.append('.. toctree::')
-    lines.append('')
     for _, name, info in contents:
-        lines.append('   %s <%s>' % (info, name))
+        lines.append('- :doc:`%s <%s>`' % (info, name))
     lines.append('')
 
     # Write file

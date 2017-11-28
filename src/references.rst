@@ -1,19 +1,22 @@
 References
 ----------
 
-**Workshops**
+Workshops
+^^^^^^^^^
 
 * Heinen, J. (2016), "Scientific computing platforms at PGI / JCNS". Workshop, PGI/JCNS, Forschungszentrum Jülich (`PDF <https://pgi-jcns.fz-juelich.de/pub/doc/Scientific_computing_platforms_at_PGI_JCNS.pdf>`__)
 
 * Heinen, J. (2014), "Scientific Visualization". Workshop, PGI/JCNS, Forschungszentrum Jülich (`PDF <https://pgi-jcns-ta.fz-juelich.de/pub/doc/sci-vis.pdf>`__, `HTML <https://pgi-jcns-ta.fz-juelich.de/pub/doc/sci-vis/>`__)
 
-**Poster Sessions**
+Poster Sessions
+^^^^^^^^^^^^^^^
 
 * Heinen, J. (2013), `"GR - a universal framework for visualization applications" <https://us.pycon.org/2013/schedule/presentation/158>`__. `PyCon US 2013 <https://us.pycon.org/2013>`__, Santa Clara, CA (`PDF <https://pgi-jcns-ta.fz-juelich.de/pub/doc/GR-A_Universal_Framework_for_Visualization_Applications.pdf>`__, `Poster <https://pgi-jcns-ta.fz-juelich.de/pub/doc/PyCon_US_2013_GR-A_Universal_Framework_for_Visualization_Applications.pdf>`__, `Video <https://www.youtube.com/watch?v=LqX_ZHwWRW8>`__)
 
 * Felder, C. (2015), `"Embedding Visualization Applications with PyGR" <https://ep2015.europython.eu/conference/talks/embedding-visualization-applications-with-pygr>`__. `EuroPython 2015 <https://ep2015.europython.eu/>`__, Bilbao, (`Poster <https://ep2015.europython.eu/media/conference/slides/embedding-visualization-applications-with-pygr.pdf>`__)
 
-**Talks**
+Talks
+^^^^^
 
 * Heinen, J. (2016), `"GR: Plotting with Python or Julia" <https://scipy2016.scipy.org/ehome/146062/332965/>`__. `SciPy 2016 <https://scipy2016.scipy.org/>`__, Austin, Texas (`PDF <https://pgi-jcns-ta.fz-juelich.de/pub/doc/SciPy_2016/GR-Plotting_with_Python_or_Julia.pdf>`__, `Video <https://www.youtube.com/watch?v=BzM0Wa3eWcQ>`__, `HTML <https://pgi-jcns-ta.fz-juelich.de/pub/doc/SciPy_2016/html/>`__)
 
@@ -41,7 +44,8 @@ References
 
 * Heinen, J. (2011), "Neutron Science Visualization Software". Jülich Centre for Neutron Science (`PDF <https://pgi-jcns-ta.fz-juelich.de/pub/doc/Neutron%20Science%20Visualization%20Software.pdf>`__)
 
-**Thesis**
+Theses
+^^^^^^
 
 * Knodt, D. (2013), "Programmierung eines GKS-Plugins in Python zur Erzeugung von statischen JavaScript/HTML5 Inhalten". Seminararbeit, FH Aachen, Campus Jülich (`PDF <https://pgi-jcns-ta.fz-juelich.de/pub/doc/Bachelorarbeit_DavidKnodt.pdf>`__)
 

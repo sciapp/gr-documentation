@@ -47,7 +47,7 @@ extensions = [
 juliaautodoc_basedir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['../theme']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -122,6 +122,7 @@ pygments_style = 'sphinx'
 import sphinx_rtd_theme
 html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_show_copyright = False
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

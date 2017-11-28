@@ -15,6 +15,5 @@ representation of complex 3D scenes.
    python.rst
    julia.rst
    c.rst
-   credits.rst
-   references.rst
-   imprint.rst
+   examples/index.rst
+   development.rst

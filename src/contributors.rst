@@ -1,7 +1,5 @@
-.. _credits:
-
-Credits
--------
+Contributors
+------------
 
 The main development has been done by Josef Heinen who currently maintains
 the software. There is a number of active developers - special thanks to

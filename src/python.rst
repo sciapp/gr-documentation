@@ -21,7 +21,7 @@ This will automatically install both the GR runtime and the Python wrapper. You 
 - openSUSE 42.3:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1``
 
-For information on building the GR runtime yourself, see the `Building GR <building?>`_.
+For information on building the GR runtime yourself, see the `Building the GR Runtime <building.rst>`_.
 
 Getting Started
 ---------------
@@ -33,6 +33,10 @@ After installing GR, you can try it out by creating a simple plot:
    from gr import pygr
    pygr.plot(list(x**2 for x in range(100)))
 
+Examples
+--------
+
+You can find a collection of Python scripts using GR in the :doc:`Examples <examples/index>` section.
 
 API Reference
 -------------
