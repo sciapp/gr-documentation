@@ -47,13 +47,25 @@ Workstation Types
 
 The layered architecture of GR and GKS allows the use of a wide variety of GUI toolkits and file formats using so-called workstations. You can select the workstation by setting the ``GKS_WSTYPE`` environment variable or by explicitly opening it using ``gks_openws``.
 
-========== ============ ===========
-Plugin     GKS_WSTYPE   Description
-========== ============ ===========
-*built-in* pdf          PDF file
-*built-in* ps           PostScript file
-cairo      png          4096×4096 PNG file
-========== ============ ===========
+========== ===================== ===========
+Plugin     GKS_WSTYPE            Description
+========== ===================== ===========
+*built-in* pdf / 102             PDF file
+*built-in* ps / 62               PS file
+*built-in* eps / 62              EPS file
+mov        mov / 120             MOV file
+gif        gif / 130             GIF file
+gs         bmp / 320             BMP file
+gs         jpg / jpeg / 321      JPEG file
+gs         png / 322             PNG file
+cairo      png / 140             PNG file
+gs         tif / tiff / 323      TIFF file
+fig        fig / 370             FIG file
+svg        svg / 382             SVG file
+wmf        wmf / 390             WMF file
+htm        html / 430            HTML file
+pgf        html / 314            PGF file
+========== ===================== ===========
 
 .. note:: List all available workstation types and output formats
 
