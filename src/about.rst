@@ -78,11 +78,11 @@ Integrations
 ============ ===================== ================
 Plugin       GKS_WSTYPE            Description
 ============ ===================== ================
-qtplugin     ???                   Qt 4
-qt5plugin    ???                   Qt 5
-gtkplugin    ???                   GTK+
-wxplugin     ???                   wxWidgets
-glplugin     ???                   OpenGL
+qtplugin     381                   Qt 4
+qt5plugin    381                   Qt 5
+gtkplugin    371                   GTK+
+wxplugin     380                   wxWidgets
+glplugin     420                   OpenGL
 ============ ===================== ================
 
 
@@ -92,9 +92,9 @@ Applications
 ============ ===================== ================
 Plugin       GKS_WSTYPE            Operating System
 ============ ===================== ================
-*built-in*   ???                   Linux
-*built-in*   ???                   Windows
-quartzplugin ???                   macOS
+*built-in*   211                   Linux
+*built-in*   41                    Windows
+quartzplugin 400                   macOS
 ============ ===================== ================
 
 
