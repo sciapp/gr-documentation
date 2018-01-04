@@ -1,4 +1,9 @@
+stages:
+    - build
+    - upload
+
 pages:
+    stage: build
     image: ubuntu:16.04
     only:
         - master
@@ -16,3 +21,14 @@ pages:
     artifacts:
         paths:
         - public
+
+upload-pages:
+    stage: upload
+    image: ubuntu:16.04
+    only:
+        - master@Scientific-IT-Systems/gr-documentation
+    script:
+        - apt-get update -y
+        - apt-get install -y rsync sshpass
+        - cd public
+        - sshpass -p $RSYNC_PASSWORD rsync -av --delete --exclude downloads/ . rsync://$RSYNC_USERNAME@pgi-jcns.fz-juelich.de/gr-doc/
