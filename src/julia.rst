@@ -29,13 +29,18 @@ For information on building the GR runtime yourself, see the `Building the GR Ru
 Getting Started
 ---------------
 
-After installing GR, you can try it out by creating a simple plot:
+After installing GR, you can try it out by creating a simple plot.
+Let’s start with a simple example. We generate 10,000 random numbers and
+create a histogram. The histogram function automatically chooses an
+appropriate number of bins to cover the range of values in x and show
+the shape of the underlying distribution.
 
 .. code-block:: julia
 
-    Pkg.add("GR")
     using GR
-    plot([0,1,4],[3,2,5])
+    histogram(randn(10000))
+
+.. image:: _static/examples/histogram.png
 
 Tutorials
 ---------

@@ -20,8 +20,10 @@ Here you can find some interesting Jupyter notebooks written for Python ...
 
 ... or Julia kernels:
 
-* `Simple animation example <https://pgi-jcns.fz-juelich.de/pub/doc/anim.html>`_
-* `Contour plot of irregular distributed data <https://pgi-jcns.fz-juelich.de/pub/doc/griddata.html>`_
-* `Mandelbrot set animation <https://pgi-jcns.fz-juelich.de/pub/doc/mandel.html>`_
+* `Gravitation wave plot detected by the LIGO observatories <https://pgi-jcns.fz-juelich.de/pub/doc/Ligo.html>`_
 * `Animated view of the Riemann Zeta function <https://pgi-jcns.fz-juelich.de/pub/doc/riemann_zeta.html>`_
+* `Mandelbrot set animation <https://pgi-jcns.fz-juelich.de/pub/doc/mandel.html>`_
 * `Julia animating Julia set fractal <https://pgi-jcns.fz-juelich.de/pub/doc/julia.html>`_
+* `Atomic orbitals <https://pgi-jcns.fz-juelich.de/pub/doc/orbitals.html>`_
+* `Visualize small angle detector data <https://pgi-jcns.fz-juelich.de/pub/doc/GALAXI-Example.html>`_
+
