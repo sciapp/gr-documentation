@@ -8,6 +8,7 @@ Tutorials
 .. toctree::
 
    using_gr.rst
+   windows_and_viewports.rst
    gr3_wx.rst
    matplotlib.rst
    mpl_interop.rst

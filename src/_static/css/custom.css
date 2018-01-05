@@ -1,3 +1,40 @@
 div[class^="highlight"] pre, code.literal span.pre {
     font-size: 14px;
 }
+
+ul.language-picker {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-size:12px;
+	line-height:1.5em;
+    margin-top:-1.5em;
+    justify-content: flex-end;
+}
+
+ul.language-picker > li.language-picker-item {
+	list-style: none;
+	border: 1px solid #e1e4e5;
+	background: #ffffff;
+	margin-left: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	cursor: pointer;
+}
+
+ul.language-picker > li.language-picker-item.language-picker-item-disabled {
+	color: #aaaaaa;
+	cursor:not-allowed;
+}
+
+ul.language-picker > li.language-picker-item.language-picker-item-active {
+	border: 1px solid #888888;
+}
+
+ul.language-picker > li.language-picker-item.language-picker-item-disabled.language-picker-item-active {
+	border: 1px solid #e1e4e5;
+}
+
+div.highlight-placeholder {
+    border-bottom: 0;
+}
