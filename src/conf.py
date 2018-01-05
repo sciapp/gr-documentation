@@ -301,3 +301,7 @@ intersphinx_mapping = {
 
 breathe_projects = { "gr": os.path.abspath(os.path.join(os.path.dirname(__file__), '../build/doxygen/xml/')) }
 breathe_default_project = "gr"
+
+
+def setup(app):
+    app.add_stylesheet('css/custom.css')
