@@ -25,6 +25,12 @@ In the following example, we will use the window and viewport to position a `sat
     int *image = NULL;
     gr_readimage("galapagos_example.png", &width, &height, &image);
 
+.. code-block:: julia
+
+    using GR
+
+    width, height, image = readimage("galapagos_example.png")
+
 In the next step, we naively draw this image at its correct location:
 
 .. code-block:: python
@@ -36,6 +42,11 @@ In the next step, we naively draw this image at its correct location:
 
     gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
     gr_updatews();
+
+.. code-block:: julia
+
+    drawimage(-95, -85, -5, 5, width, height, image)
+    updatews()
 
 The result? Nothing. The default **window** is set to [0, 1] × [0, 1] and therefore the image is not drawn. To mitigate this, we can use `setwindow`. With longitude ranging from -180 to 180 and latitude ranging from -90 to 90, we could do the following:
 
@@ -50,6 +61,12 @@ The result? Nothing. The default **window** is set to [0, 1] × [0, 1] and there
     gr_setwindow(-180, 180, -90, 90);
     gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
     gr_updatews();
+
+.. code-block:: julia
+
+    setwindow(-180, 180, -90, 90)
+    drawimage(-95, -85, -5, 5, width, height, image)
+    updatews()
 
 .. image:: images/galapagos_output1.png
 
@@ -67,6 +84,12 @@ This results in a small blue rectangle where our satellite image is drawn, but i
     gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
     gr_updatews();
 
+.. code-block:: julia
+
+    setwindow(-95, -85, -5, 5)
+    drawimage(-95, -85, -5, 5, width, height, image)
+    updatews()
+
 .. image:: images/galapagos_output2.png
 
 This way we can properly see the contents of the image, but with it containing ±5˚ longitude and latitude around the archipelago, we might adjust our window further to show only the region we are really interested in:
@@ -82,6 +105,12 @@ This way we can properly see the contents of the image, but with it containing �
     gr_setwindow(-92.75, -87.25, -1.75, 1);
     gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
     gr_updatews();
+
+.. code-block:: julia
+
+    setwindow(-92.75, -87.25, -1.75, 1)
+    drawimage(-95, -85, -5, 5, width, height, image)
+    updatews()
 
 .. image:: images/galapagos_output3.png
 
@@ -100,6 +129,13 @@ The **window** has a range of 5.5˚ latitude and 2.75˚ longitude, so it appears
     gr_setwindow(-92.75, -87.25, -1.75, 1);
     gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
     gr_updatews();
+
+.. code-block:: julia
+
+    setviewport(0, 1, 0, 0.5)
+    setwindow(-92.75, -87.25, -1.75, 1)
+    drawimage(-95, -85, -5, 5, width, height, image)
+    updatews()
 
 .. image:: images/galapagos_output4.png
 
