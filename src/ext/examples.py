@@ -6,7 +6,7 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 DOC_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
 EXAMPLES_DIR = os.path.abspath(os.path.join(DOC_DIR, '..', 'python-gr', 'examples'))
 OUTPUT_DIR = os.path.join(DOC_DIR, 'examples')
-MEDIA_DIR = os.path.abspath(os.path.join(DOC_DIR, 'media'))
+MEDIA_DIR = os.path.abspath(os.path.join(DOC_DIR, '_static', 'examples'))
 
 
 def clean():
@@ -39,14 +39,14 @@ def movie(name):
 #    lines.append('   QT_WriteOBJECT("/media/%s.mov" , "558", "558" , "", "autoplay", "true", "controller", "false");' % name)
 #    lines.append('   </script>')
     lines.append('  <video width="558" height="558" controls autoplay>')
-    lines.append('    <source src="/media/%s.mov" type="video/mp4">' % name)
-    lines.append('    <source src="/media/%s.ogg" type="video/ogg">' % name)
+    lines.append('    <source src="../_static/examples/%s.mov" type="video/mp4">' % name)
+    lines.append('    <source src="../_static/examples/%s.ogg" type="video/ogg">' % name)
     lines.append('  </video>')
     return lines
 
 def image(name):
     lines = []
-    lines.append('.. image:: %s.png' % name)
+    lines.append('.. image:: ../_static/examples/%s.png' % name)
     return lines
 
 def separator():
