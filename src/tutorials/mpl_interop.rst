@@ -76,9 +76,9 @@ environment variable)::
 .. raw:: html
 
     <video width="640" height="480" autoplay controls>
-    <source src="/media/mpl_interop/700K_460.mp4" type="video/mp4">
-    <source src="/media/mpl_interop/700K_460.ogg" type="video/ogg">
-    <source src="/media/mpl_interop/700K_460.webm" type="video/webm">
+    <source src="../_static/mpl_interop/700K_460.mp4" type="video/mp4">
+    <source src="../_static/mpl_interop/700K_460.ogg" type="video/ogg">
+    <source src="../_static/mpl_interop/700K_460.webm" type="video/webm">
     </video>
 
 ----
@@ -102,8 +102,8 @@ You can then watch the animation in your browser window.
 .. raw:: html
 
     <video width="478" height="540" autoplay controls>
-    <source src="/media/mpl_interop/700K_460-browser.mp4" type="video/mp4">
-    <source src="/media/mpl_interop/700K_460-browser.ogg" type="video/ogg">
-    <source src="/media/mpl_interop/700K_460-browser.webm" type="video/webm">
+    <source src="../_static/mpl_interop/700K_460-browser.mp4" type="video/mp4">
+    <source src="../_static/mpl_interop/700K_460-browser.ogg" type="video/ogg">
+    <source src="../_static/mpl_interop/700K_460-browser.webm" type="video/webm">
     </video>
 

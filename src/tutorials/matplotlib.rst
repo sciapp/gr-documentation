@@ -34,8 +34,8 @@ are shown below.
 
    function swapImage()
    {
-      $.get("../media/matplotlib/" + path[i] + ".html", success=function(data) {
-          document.slide.src = "../media/matplotlib/" + path[i] + ".png";
+      $.get("../_static/matplotlib/" + path[i] + ".html", success=function(data) {
+          document.slide.src = "../_static/matplotlib/" + path[i] + ".png";
           $("#slide_source").html(data);
           if (i < path.length - 1) i++; else i = 0;
           setTimeout("swapImage()", 5000);
@@ -44,5 +44,5 @@ are shown below.
    window.onload=swapImage;
    </script>
    
-   <img name="slide" src="../media/matplotlib/artist_reference.png" />
+   <img name="slide" src="../_static/matplotlib/artist_reference.png" />
    <div id="slide_source"></div>
