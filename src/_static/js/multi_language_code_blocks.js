@@ -77,8 +77,26 @@ function addLanguagePickers() {
         language_picker_item.className = "language-picker-item language-picker-item-"+language.id;
         if (has_version_in_language) {
           language_picker_item.addEventListener("click", function() {
-            setLanguage(this);
-          }.bind(language));
+            // Calculate height difference of previous code blocks and scroll accordingly, keeping the current code block fixed
+            var currently_visible_elements = $(this.language_picker).prevAll('div[class^="highlight-"]').filter(function() {
+              return $(this).is(":visible");
+            });
+            var current_visible_height = 0;
+            for (var k = 1; k < currently_visible_elements.length; k++) {
+              current_visible_height += $(currently_visible_elements[k]).height();
+            }
+
+            setLanguage(this.language);
+
+            var afterwards_visible_elements = $(this.language_picker).prevAll('div[class^="highlight-"]').filter(function() {
+              return $(this).is(":visible");
+            });
+            var afterwards_visible_height = 0;
+            for (var k = 1; k < afterwards_visible_elements.length; k++) {
+              afterwards_visible_height += $(afterwards_visible_elements[k]).height();
+            }
+            $(document).scrollTop($(document).scrollTop()+afterwards_visible_height-current_visible_height);
+          }.bind({language: language, language_picker: language_picker}));
         } else {
           language_picker_item.className += " language-picker-item-disabled";
           $(placeholder).before("<div class='highlight-placeholder highlight-"+language.id+"'><div class='highlight'></div></div>");
