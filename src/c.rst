@@ -30,7 +30,7 @@ You may need to install some additional dependencies on Linux:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1``
 
 For other versions of GR, see the `downloads <https://gr-framework.org/downloads/>`_.
-For information on building the GR runtime yourself, see the `Building the GR Runtime <building.rst>`_.
+For information on building the GR runtime yourself, see the `Building the GR Runtime <building.html>`_.
 
 Linux packages
 ^^^^^^^^^^^^^^
