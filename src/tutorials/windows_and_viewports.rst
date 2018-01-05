@@ -14,6 +14,14 @@ In the following example, we will use the window and viewport to position a `sat
     import gr
     width, height, data = gr.readimage("galapagos_example.png")
 
+.. code-block:: julia
+
+    using GR
+
+.. code-block:: c
+
+    #include <gr.h>
+
 In the next step, we naively draw this image at its correct location:
 
 .. code-block:: python
