@@ -7,7 +7,7 @@ The coordinates you work with can be in whatever range you want and are purely c
 
 After selecting this **window** in **world coordinates**, you need to decide where it should be placed on your output image. For this, GR and GKS work with **normalized device coordinates**, with a range between 0 and 1 in both axes, with (0, 0) being the lower left corner and (1, 1) being the upper right corner of your output. The rectangular region in the output image onto which you want to draw the content inside your **window** is called the **viewport**. To set the **viewport**, you can use the `setviewport` function.
 
-In the following example, we will use the window and viewport to position a `satellite image of the Galapagos Archipelago <_static/galapagos_example.png>`_, which is conveniently located at 0˚ latitude and -90˚ longitude, with the image capturing ±5˚ of both. We will use longitude as x coordinates and latitude as y coordinates in this example, thereby defining our **world space**. First, we open the image and read its width, height and pixel data:
+In the following example, we will use the window and viewport to position a `satellite image of the Galapagos Archipelago <../_static/galapagos_example.png>`_, which is conveniently located at 0˚ latitude and -90˚ longitude, with the image capturing ±5˚ of both. We will use longitude as x coordinates and latitude as y coordinates in this example, thereby defining our **world space**. First, we open the image and read its width, height and pixel data:
 
 .. code-block:: python
 
