@@ -12,30 +12,44 @@ In the following example, we will use the window and viewport to position a `sat
 .. code-block:: python
 
     import gr
-    width, height, data = gr.readimage("galapagos_example.png")
-
-.. code-block:: julia
-
-    using GR
+    width, height, image = gr.readimage("galapagos_example.png")
 
 .. code-block:: c
 
     #include <gr.h>
 
+    /* ... */
+
+    int width = 0;
+    int height = 0;
+    int *image = NULL;
+    gr_readimage("galapagos_example.png", &width, &height, &image);
+
 In the next step, we naively draw this image at its correct location:
 
 .. code-block:: python
 
-    gr.drawimage(-95, -85, -5, 5, width, height, data)
+    gr.drawimage(-95, -85, -5, 5, width, height, image)
     gr.updatews()
+
+.. code-block:: c
+
+    gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
+    gr_updatews();
 
 The result? Nothing. The default **window** is set to [0, 1] × [0, 1] and therefore the image is not drawn. To mitigate this, we can use `setwindow`. With longitude ranging from -180 to 180 and latitude ranging from -90 to 90, we could do the following:
 
 .. code-block:: python
 
     gr.setwindow(-180, 180, -90, 90)
-    gr.drawimage(-95, -85, -5, 5, width, height, data)
+    gr.drawimage(-95, -85, -5, 5, width, height, image)
     gr.updatews()
+
+.. code-block:: c
+
+    gr_setwindow(-180, 180, -90, 90);
+    gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
+    gr_updatews();
 
 .. image:: images/galapagos_output1.png
 
@@ -44,8 +58,14 @@ This results in a small blue rectangle where our satellite image is drawn, but i
 .. code-block:: python
 
     gr.setwindow(-95, -85, -5, 5)
-    gr.drawimage(-95, -85, -5, 5, width, height, data)
+    gr.drawimage(-95, -85, -5, 5, width, height, image)
     gr.updatews()
+
+.. code-block:: c
+
+    gr_setwindow(-95, -85, -5, 5);
+    gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
+    gr_updatews();
 
 .. image:: images/galapagos_output2.png
 
@@ -54,8 +74,14 @@ This way we can properly see the contents of the image, but with it containing �
 .. code-block:: python
 
     gr.setwindow(-92.75, -87.25, -1.75, 1)
-    gr.drawimage(-95, -85, -5, 5, width, height, data)
+    gr.drawimage(-95, -85, -5, 5, width, height, image)
     gr.updatews()
+
+.. code-block:: c
+
+    gr_setwindow(-92.75, -87.25, -1.75, 1);
+    gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
+    gr_updatews();
 
 .. image:: images/galapagos_output3.png
 
@@ -65,8 +91,15 @@ The **window** has a range of 5.5˚ latitude and 2.75˚ longitude, so it appears
 
     gr.setviewport(0, 1, 0, 0.5)
     gr.setwindow(-92.75, -87.25, -1.75, 1)
-    gr.drawimage(-95, -85, -5, 5, width, height, data)
+    gr.drawimage(-95, -85, -5, 5, width, height, image)
     gr.updatews()
+
+.. code-block:: c
+
+    gr_setviewport(0, 1, 0, 0.5);
+    gr_setwindow(-92.75, -87.25, -1.75, 1);
+    gr_drawimage(-95, -85, -5, 5, width, height, image, 0);
+    gr_updatews();
 
 .. image:: images/galapagos_output4.png
 
