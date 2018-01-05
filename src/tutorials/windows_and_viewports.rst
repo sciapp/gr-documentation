@@ -12,6 +12,7 @@ In the following example, we will use the window and viewport to position a `sat
 .. code-block:: python
 
     import gr
+
     width, height, image = gr.readimage("galapagos_example.png")
 
 .. code-block:: c
