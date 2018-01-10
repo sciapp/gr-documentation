@@ -38,3 +38,7 @@ ul.language-picker > li.language-picker-item.language-picker-item-disabled.langu
 div.highlight-placeholder {
     border-bottom: 0;
 }
+
+th.head {
+    border-left: 1px solid #e1e4e5;
+}
