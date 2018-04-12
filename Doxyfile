@@ -770,6 +770,8 @@ INPUT                  = \
 	gr/lib/gr3/gr3.c \
 	gr/lib/gr3/gr3_mc.c \
 	gr/lib/gr/gr.h \
+	gr/lib/gr/gr.c \
+	gr/lib/gr/interp2.c \
 	gr/lib/gks/gks.h \
 
 
