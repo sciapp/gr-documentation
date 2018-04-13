@@ -3,7 +3,7 @@
 	url = https://github.com/sciapp/python-gr.git
 [submodule "gr"]
 	path = gr
-	url = https://github.com/jheinen/gr.git
+	url = https://github.com/sciapp/gr.git
 [submodule "GR.jl"]
 	path = GR.jl
 	url = https://github.com/jheinen/GR.jl.git
