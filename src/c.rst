@@ -21,13 +21,13 @@ Windows          i686         `gr-latest-Windows-i686.tar.gz <https://gr-framewo
 You may need to install some additional dependencies on Linux:
 
 - Debian/Ubuntu:
-   ``apt install libxt6 libxrender1 libgl1-mesa-glx``
+   ``apt install libxt6 libxrender1 libgl1-mesa-glx libqt5widgets5``
 - CentOS 7:
-   ``yum install libXt libXrender libXext mesa-libGL``
-- Fedora 26:
-   ``dnf install libXt libXrender libXext mesa-libGL``
+   ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
+- Fedora 28:
+   ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - openSUSE 42.3:
-   ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1``
+   ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
 
 For other versions of GR, see the `downloads <https://gr-framework.org/downloads/>`_.
 For information on building the GR runtime yourself, see the `Building the GR Runtime <building.html>`_.
