@@ -26,6 +26,15 @@ This will automatically install both the GR runtime and the Julia wrapper. You m
 
 For information on building the GR runtime yourself, see the `Building the GR Runtime <building.html>`_.
 
+Docker and other headless Linux systems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GR does not require X11 for its non-interactive output formats, however GR3
+uses GLX for OpenGL context creation, which requires a connection to an X
+server. If you are using a headless sytem, e.g. a Docker container, you can
+use Xvfb or similar tools to start an X server that can be used by GR3,
+although it may only provide software rendering.
+
 Getting Started
 ---------------
 
