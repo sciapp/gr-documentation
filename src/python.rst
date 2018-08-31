@@ -18,7 +18,7 @@ This will automatically install both the GR runtime and the Python wrapper. You 
    ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - Fedora 28:
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
-- openSUSE 42.3:
+- openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
 
 For information on building the GR runtime yourself, see the `Building the GR Runtime <building.html>`_.
@@ -39,8 +39,10 @@ After installing GR, you can try it out by creating a simple plot:
 
 .. code-block:: python
 
-   from gr import pygr
-   pygr.plot(list(x**2 for x in range(100)))
+   from gr.pygr import mlab
+   mlab.plot(range(100), lambda x: x**2)
+
+.. image:: _static/img/mlab_plots/plot_demo.png
 
 Tutorials
 ---------

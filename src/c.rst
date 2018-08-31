@@ -26,7 +26,7 @@ You may need to install some additional dependencies on Linux:
    ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - Fedora 28:
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
-- openSUSE 42.3:
+- openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
 
 For other versions of GR, see the `downloads <https://gr-framework.org/downloads/>`_.

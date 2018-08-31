@@ -10,55 +10,82 @@ Line Plots
 """"""""""
 
 .. automethod:: gr.pygr.mlab.plot
+.. image:: _static/img/mlab_plots/plot.png
+
 .. automethod:: gr.pygr.mlab.oplot
+.. image:: _static/img/mlab_plots/oplot.png
+
 .. automethod:: gr.pygr.mlab.plot3
+.. image:: _static/img/mlab_plots/plot3.png
+
 .. automethod:: gr.pygr.mlab.polar
+.. image:: _static/img/mlab_plots/polar.png
 
 Scatter Plots
 """""""""""""
 
 .. automethod:: gr.pygr.mlab.scatter
+.. image:: _static/img/mlab_plots/scatter.png
+
 .. automethod:: gr.pygr.mlab.scatter3
+.. image:: _static/img/mlab_plots/scatter3.png
 
 Stem Plots
 """"""""""
 
 .. automethod:: gr.pygr.mlab.stem
+.. image:: _static/img/mlab_plots/stem.png
 
 Histograms
 """"""""""
 
 .. automethod:: gr.pygr.mlab.histogram
+.. image:: _static/img/mlab_plots/histogram.png
+
 .. automethod:: gr.pygr.mlab.hexbin
+.. image:: _static/img/mlab_plots/hexbin.png
 
 Contour Plots
 """""""""""""
 
 .. automethod:: gr.pygr.mlab.contour
+.. image:: _static/img/mlab_plots/contour.png
+
 .. automethod:: gr.pygr.mlab.contourf
+.. image:: _static/img/mlab_plots/contourf.png
+
 .. automethod:: gr.pygr.mlab.tricont
+.. image:: _static/img/mlab_plots/tricont.png
 
 Surface Plots
 """""""""""""
 
 .. automethod:: gr.pygr.mlab.surface
+.. image:: _static/img/mlab_plots/surface.png
+
 .. automethod:: gr.pygr.mlab.trisurf
+.. image:: _static/img/mlab_plots/trisurf.png
+
 .. automethod:: gr.pygr.mlab.wireframe
+.. image:: _static/img/mlab_plots/wireframe.png
 
 Heatmaps
 """"""""
 
 .. automethod:: gr.pygr.mlab.heatmap
+.. image:: _static/img/mlab_plots/heatmap.png
 
 Images
 """"""
 
 .. automethod:: gr.pygr.mlab.imshow
+.. image:: _static/img/mlab_plots/imshow.png
 
 Isosurfaces
 """""""""""
 
 .. automethod:: gr.pygr.mlab.isosurface
+.. image:: _static/img/mlab_plots/isosurface.png
 
 
 Attribute Functions
