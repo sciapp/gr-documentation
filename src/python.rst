@@ -18,10 +18,19 @@ This will automatically install both the GR runtime and the Python wrapper. You 
    ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - Fedora 28:
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
-- openSUSE 42.3:
+- openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
 
 For information on building the GR runtime yourself, see the `Building the GR Runtime <building.html>`_.
+
+Docker and other headless Linux systems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GR does not require X11 for its non-interactive output formats, however GR3
+uses GLX for OpenGL context creation, which requires a connection to an X
+server. If you are using a headless sytem, e.g. a Docker container, you can
+use Xvfb or similar tools to start an X server that can be used by GR3,
+although it may only provide software rendering.
 
 Getting Started
 ---------------
@@ -30,8 +39,10 @@ After installing GR, you can try it out by creating a simple plot:
 
 .. code-block:: python
 
-   from gr import pygr
-   pygr.plot(list(x**2 for x in range(100)))
+   from gr.pygr import mlab
+   mlab.plot(range(100), lambda x: x**2)
+
+.. image:: _static/img/mlab_plots/plot_demo.png
 
 Tutorials
 ---------

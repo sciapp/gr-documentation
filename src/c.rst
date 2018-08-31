@@ -26,11 +26,20 @@ You may need to install some additional dependencies on Linux:
    ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - Fedora 28:
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
-- openSUSE 42.3:
+- openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
 
 For other versions of GR, see the `downloads <https://gr-framework.org/downloads/>`_.
 For information on building the GR runtime yourself, see the `Building the GR Runtime <building.html>`_.
+
+Docker and other headless Linux systems
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GR does not require X11 for its non-interactive output formats, however GR3
+uses GLX for OpenGL context creation, which requires a connection to an X
+server. If you are using a headless sytem, e.g. a Docker container, you can
+use Xvfb or similar tools to start an X server that can be used by GR3,
+although it may only provide software rendering.
 
 Linux packages
 ^^^^^^^^^^^^^^

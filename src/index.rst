@@ -10,6 +10,7 @@ representation of complex 3D scenes.
 
 .. toctree::
    :maxdepth: 2
+   :includehidden:
 
    about.rst
    python.rst
