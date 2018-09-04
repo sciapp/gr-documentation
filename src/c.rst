@@ -79,6 +79,8 @@ After installing GR, you can try it out by creating a simple plot:
        return 0;
    }
 
+.. image:: _static/img/c_plots/plot_demo.png
+
 Tutorials
 ---------
 
