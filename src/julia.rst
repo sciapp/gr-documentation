@@ -6,7 +6,14 @@ Installation
 
 For the Julia programming language an official
 `GR.jl <https://github.com/jheinen/GR.jl>`_ package has been registered.
-You can add the GR framework to your Julia installation with the
+You can add the GR framework to your Julia installation by entering the Pkg
+REPL-mode with ``]`` and typing:
+
+.. code-block:: julia
+
+    add GR
+
+In Julia versions without the Pkg REPL-mode you can instead use the
 ``Pkg.add()`` function:
 
 .. code-block:: julia
