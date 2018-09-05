@@ -23,7 +23,7 @@ In Julia versions without the Pkg REPL-mode you can instead use the
 This will automatically install both the GR runtime and the Julia wrapper. You may need to install some additional dependencies on Linux:
 
 - Debian/Ubuntu:
-   ``apt install libxt6 libxrender1 libgl1-mesa-glx libqt5widgets5``
+   ``apt install libxt6 libxrender1 libxext6 libgl1-mesa-glx libqt5widgets5``
 - CentOS 7:
    ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - Fedora 28:
@@ -42,8 +42,9 @@ For information on building the GR runtime yourself, see
 Docker and other headless Linux systems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- GR does not require X11 for its non-interactive output formats, so you will
-  not need the dependencies listed above.
+- GR does not require a connection to an X server for its non-interactive
+  output formats, but you may still need the X11 libraries listed above,
+  e.g. for creating PNGs with the cairo plugin.
 - GR3 uses GLX for OpenGL context creation, which requires a connection to an X
   server. If you are using a headless sytem, e.g. a Docker container, you can
   use Xvfb or similar tools to start an X server that can be used by GR3,
