@@ -21,25 +21,33 @@ Windows          i686         `gr-latest-Windows-i686.tar.gz <https://gr-framewo
 You may need to install some additional dependencies on Linux:
 
 - Debian/Ubuntu:
-   ``apt install libxt6 libxrender1 libgl1-mesa-glx libqt5widgets5``
+   ``apt install libxt6 libxrender1 libxext6 libgl1-mesa-glx libqt5widgets5``
 - CentOS 7:
    ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - Fedora 28:
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
+- CentOS 6 / Other Linux distributions
+   ``yum install libXt libXrender libXext Mesa-libGL qt-x11``
+
+   **Note:** The CentOS 6 build is used for other Linux distributions, so you may have to
+   adapt its requirements to your system.
 
 For other versions of GR, see the `downloads <https://gr-framework.org/downloads/>`_.
-For information on building the GR runtime yourself, see the `Building the GR Runtime <building.html>`_.
+For information on building the GR runtime yourself, see 
+`Building the GR Runtime <building.html>`_.
 
 Docker and other headless Linux systems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-GR does not require X11 for its non-interactive output formats, however GR3
-uses GLX for OpenGL context creation, which requires a connection to an X
-server. If you are using a headless sytem, e.g. a Docker container, you can
-use Xvfb or similar tools to start an X server that can be used by GR3,
-although it may only provide software rendering.
+- GR does not require a connection to an X server for its non-interactive
+  output formats, but you may still need the X11 libraries listed above,
+  e.g. for creating PNGs with the cairo plugin.
+- GR3 uses GLX for OpenGL context creation, which requires a connection to an X
+  server. If you are using a headless sytem, e.g. a Docker container, you can
+  use Xvfb or similar tools to start an X server that can be used by GR3,
+  although it may only provide software rendering.
 
 Linux packages
 ^^^^^^^^^^^^^^
@@ -71,6 +79,8 @@ After installing GR, you can try it out by creating a simple plot:
        getc(stdin);
        return 0;
    }
+
+.. image:: _static/img/c_plots/plot_demo.png
 
 Tutorials
 ---------

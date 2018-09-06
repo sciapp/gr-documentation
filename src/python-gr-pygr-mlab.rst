@@ -30,6 +30,12 @@ Scatter Plots
 .. automethod:: gr.pygr.mlab.scatter3
 .. image:: _static/img/mlab_plots/scatter3.png
 
+Quiver Plots
+"""""""""""""
+
+.. automethod:: gr.pygr.mlab.quiver
+.. image:: _static/img/mlab_plots/quiver.png
+
 Stem Plots
 """"""""""
 
