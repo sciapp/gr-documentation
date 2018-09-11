@@ -7,7 +7,8 @@ Tutorials
 
 .. toctree::
 
-   using_gr.rst
+   using_gr_in_fortran.rst
+   using_gr_in_javascript.rst
    windows_and_viewports.rst
    gr3_wx.rst
    matplotlib.rst
