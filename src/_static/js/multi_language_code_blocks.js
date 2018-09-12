@@ -1,7 +1,9 @@
 var known_languages = [
+  {id: "julia", name: "Julia"},
   {id: "python", name: "Python"},
   {id: "c", name: "C"},
-  {id: "julia", name: "Julia"}
+  {id: "fortran", name: "Fortran"},
+  {id: "javascript", name: "JavaScript"}
 ];
 
 function setLanguage(language) {
@@ -33,7 +35,6 @@ function addLanguagePickers() {
   // Remove languages which aren't used in this page
   for (var i = known_languages.length-1; i >= 0; i--) {
     if ($(".highlight").filter(function() { return $(this.parentNode).hasClass("highlight-"+known_languages[i].id); }).length == 0) {
-      console.log(known_languages[i]);
       known_languages.splice(i, 1);
     }
   }
