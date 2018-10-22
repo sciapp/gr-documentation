@@ -15,6 +15,9 @@ Line Plots
 .. automethod:: gr.pygr.mlab.oplot
 .. image:: _static/img/mlab_plots/oplot.png
 
+.. automethod:: gr.pygr.mlab.step
+.. image:: _static/img/mlab_plots/step.png
+
 .. automethod:: gr.pygr.mlab.plot3
 .. image:: _static/img/mlab_plots/plot3.png
 
