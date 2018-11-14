@@ -35,6 +35,11 @@ htmplugin    html / 430            HTML
 pgfplugin    pgf / 314             PGF
 ============ ===================== ================
 
+Both the **gsplugin** and the **cairplugin** can be used to create PNG files.
+If both plugins are available, the **gsplugin** will be used by default, but
+the environment variable ``GKS_USE_CAIRO_PNG`` can be set to use the
+**cairoplugin** instead.
+
 Configuring Video Output Options
 ````````````````````````````````
 
