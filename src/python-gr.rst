@@ -9,6 +9,8 @@ Output Functions
 .. autofunction:: gr.text
 .. autofunction:: gr.fillarea
 .. autofunction:: gr.cellarray
+.. autofunction:: gr.shadepoints
+.. autofunction:: gr.shadelines
 .. autofunction:: gr.spline
 .. autofunction:: gr.textext
 .. autofunction:: gr.inqtextext

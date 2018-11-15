@@ -84,6 +84,9 @@ Heatmaps
 .. automethod:: gr.pygr.mlab.heatmap
 .. image:: _static/img/mlab_plots/heatmap.png
 
+.. automethod:: gr.pygr.mlab.shade
+.. image:: _static/img/mlab_plots/shade.png
+
 Images
 """"""
 
