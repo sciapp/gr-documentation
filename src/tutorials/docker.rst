@@ -1,51 +1,61 @@
-Dockerizing GR
-^^^^^^^^^^^^^^
+Using GR3 with Docker
+^^^^^^^^^^^^^^^^^^^^^
 
-This guide will show you how to create a Fedora docker container for GR
-or share the contributed GR container from
-`Docker Hub <https://hub.docker.com>`_.
+If you install the `Julia <../julia.html>`_ or `Python <../python.html>`_
+packages for GR or download the pre-built Linux binaries within a Docker
+container, you will be able to use the non-interactive
+`output formats <../workstations.html>`_ like PNG images or SVG files.
 
-Instead of manually installing GR and required modules it is highly
-recommended to use the existing container:
+GR3 however requires X11 and OpenGL libraries to be installed and a connection
+to an X server to exist, which will usually not be the case inside a Docker
+container. To be able to use GR3 as well, you will need to install the X11 and
+OpenGL dependencies listed on the `Julia <../julia.html>`_,
+`Python <../python.html>`_ or `C <../c.html>`_ page and run Xvfb or a similar
+tool to start an X server that can then be used by GR3.
 
-.. image:: docker.png
+The following example shows how to use GR3 from within an official Julia or
+Python Docker container:
 
-----
+.. code-block:: python
 
-To create your "own" full-featured Fedora environment with GR support for
-Python and Julia, you have to install some prerequisites first:
+    % docker run -it python:stretch bash
+    
+    # Install X11, OpenGL and Xvfb
+    $ apt update -y
+    $ apt install -y libxt6 libxrender1 libxext6 libgl1-mesa-glx xvfb
+    
+    # Set GKS_WSTYPE to output to PNG images
+    $ export GKS_WSTYPE=png
+    
+    # Install the Python Package gr
+    $ pip3 install gr
+    
+    # Run Python within an Xvfb session
+    $ xvfb-run --server-args '-screen 0 1920x1080x24' python3
+    >>> import gr3
+    >>> # GR3 will use software rendering, e.g. using llvmpipe
+    >>> gr3.getrenderpathstring()
+    [...] 3.0 Mesa 13.0.6 - Gallium 0.4 on llvmpipe (LLVM 3.9, 256 bits) [...]
 
-.. code-block:: bash
+.. code-block:: julia
 
-    % docker run -it fedora bash
-
-    $ yum install git make gcc gcc-c++ gcc-gfortran matplotlib ipython \
-    texlive-collection-latex PyQt4-devel wxGTK-devel ghostscript-devel \
-    glfw-devel zeromq3-devel mupdf-devel jbig2dec-devel openjpeg2-devel \
-    libjpeg-turbo-devel julia
-
-Once you have installed the required components, you can install the
-GR framework in your newly created container:
-
-.. code-block:: bash
-
-    git clone https://github.com/jheinen/gr
-    cd gr
-    make install; make clean
-    export PYTHONPATH=${PYTHONPATH}:/usr/local/gr/lib/python
-
-You are now ready to use GR from Python.
-
-For the Julia programming language an official ``GR.jl`` package has been
-registered. You can add the GR framework to your Julia installation with
-the ``Pkg.add()`` function:
-
-.. code-block:: bash
-
-    julia> Pkg.init()
-    julia> Pkg.add(“GR”)
-
-At this point, you should be able to use GR::
-
+    % docker run -it julia:stretch bash
+    
+    # Install X11, OpenGL and Xvfb
+    $ apt update -y
+    $ apt install -y libxt6 libxrender1 libxext6 libgl1-mesa-glx xvfb
+    
+    # Set GKS_WSTYPE to output to PNG images
+    $ export GKS_WSTYPE=png
+    
+    # Install the Julia Package GR
+    $ julia
+    julia> using Pkg
+    julia> Pkg.add("GR")
+    
+    # Run Julia within an Xvfb session
+    $ xvfb-run --server-args '-screen 0 1920x1080x24' julia
     julia> using GR
-
+    julia> # GR3 will use software rendering, e.g. using llvmpipe
+    julia> gr3.getrenderpathstring()
+    [...] 3.0 Mesa 13.0.6 - Gallium 0.4 on llvmpipe (LLVM 3.9, 256 bits) [...]

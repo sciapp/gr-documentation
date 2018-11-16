@@ -23,8 +23,9 @@ This will automatically install both the GR runtime and the Python wrapper. You 
 - CentOS 6 / Other Linux distributions
    ``yum install libXt libXrender libXext Mesa-libGL qt-x11``
 
-   **Note:** The CentOS 6 build is used for other Linux distributions, so you may have to
-   adapt its requirements to your system.
+   **Note:** The CentOS 6 build is used for other Linux distributions and
+   relies on Qt 4 for the ``gksqt`` application, so you may need to install
+   X11, OpenGL and Qt 4 packages specific to your system.
 
 For information on building the GR runtime yourself, see
 `Building the GR Runtime <building.html>`_.
@@ -32,9 +33,8 @@ For information on building the GR runtime yourself, see
 Docker and other headless Linux systems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- GR does not require a connection to an X server for its non-interactive
-  output formats, but you may still need the X11 libraries listed above,
-  e.g. for creating PNGs with the cairo plugin.
+- GR does not rely on X11 for its non-interactive output formats, so you will
+  not need the dependencies listed above on a headless system.
 - GR3 uses GLX for OpenGL context creation, which requires a connection to an X
   server. If you are using a headless sytem, e.g. a Docker container, you can
   use Xvfb or similar tools to start an X server that can be used by GR3,

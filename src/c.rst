@@ -28,11 +28,12 @@ You may need to install some additional dependencies on Linux:
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
-- CentOS 6 / Other Linux distributions
+- CentOS 6
    ``yum install libXt libXrender libXext Mesa-libGL qt-x11``
 
-   **Note:** The CentOS 6 build is used for other Linux distributions, so you may have to
-   adapt its requirements to your system.
+   **Note**: The CentOS 6 build can be used for other Linux distributions and
+   relies on Qt 4 for the ``gksqt`` application, so you may need to install
+   X11, OpenGL and Qt 4 packages specific to your system.
 
 For other versions of GR, see the `downloads <https://gr-framework.org/downloads/>`_.
 For information on building the GR runtime yourself, see 
@@ -41,9 +42,8 @@ For information on building the GR runtime yourself, see
 Docker and other headless Linux systems
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- GR does not require a connection to an X server for its non-interactive
-  output formats, but you may still need the X11 libraries listed above,
-  e.g. for creating PNGs with the cairo plugin.
+- GR does not rely on X11 for its non-interactive output formats, so you will
+  not need the dependencies listed above on a headless system.
 - GR3 uses GLX for OpenGL context creation, which requires a connection to an X
   server. If you are using a headless sytem, e.g. a Docker container, you can
   use Xvfb or similar tools to start an X server that can be used by GR3,
