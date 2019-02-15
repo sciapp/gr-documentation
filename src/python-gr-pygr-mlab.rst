@@ -9,123 +9,123 @@ Output Functions
 Line Plots
 """"""""""
 
-.. automethod:: gr.pygr.mlab.plot
+.. autofunction:: gr.pygr.mlab.plot
 .. image:: _static/img/mlab_plots/plot.png
 
-.. automethod:: gr.pygr.mlab.oplot
+.. autofunction:: gr.pygr.mlab.oplot
 .. image:: _static/img/mlab_plots/oplot.png
 
-.. automethod:: gr.pygr.mlab.step
+.. autofunction:: gr.pygr.mlab.step
 .. image:: _static/img/mlab_plots/step.png
 
-.. automethod:: gr.pygr.mlab.plot3
+.. autofunction:: gr.pygr.mlab.plot3
 .. image:: _static/img/mlab_plots/plot3.png
 
-.. automethod:: gr.pygr.mlab.polar
+.. autofunction:: gr.pygr.mlab.polar
 .. image:: _static/img/mlab_plots/polar.png
 
 Scatter Plots
 """""""""""""
 
-.. automethod:: gr.pygr.mlab.scatter
+.. autofunction:: gr.pygr.mlab.scatter
 .. image:: _static/img/mlab_plots/scatter.png
 
-.. automethod:: gr.pygr.mlab.scatter3
+.. autofunction:: gr.pygr.mlab.scatter3
 .. image:: _static/img/mlab_plots/scatter3.png
 
 Quiver Plots
 """""""""""""
 
-.. automethod:: gr.pygr.mlab.quiver
+.. autofunction:: gr.pygr.mlab.quiver
 .. image:: _static/img/mlab_plots/quiver.png
 
 Stem Plots
 """"""""""
 
-.. automethod:: gr.pygr.mlab.stem
+.. autofunction:: gr.pygr.mlab.stem
 .. image:: _static/img/mlab_plots/stem.png
 
 Histograms
 """"""""""
 
-.. automethod:: gr.pygr.mlab.histogram
+.. autofunction:: gr.pygr.mlab.histogram
 .. image:: _static/img/mlab_plots/histogram.png
 
-.. automethod:: gr.pygr.mlab.hexbin
+.. autofunction:: gr.pygr.mlab.hexbin
 .. image:: _static/img/mlab_plots/hexbin.png
 
 Contour Plots
 """""""""""""
 
-.. automethod:: gr.pygr.mlab.contour
+.. autofunction:: gr.pygr.mlab.contour
 .. image:: _static/img/mlab_plots/contour.png
 
-.. automethod:: gr.pygr.mlab.contourf
+.. autofunction:: gr.pygr.mlab.contourf
 .. image:: _static/img/mlab_plots/contourf.png
 
-.. automethod:: gr.pygr.mlab.tricont
+.. autofunction:: gr.pygr.mlab.tricont
 .. image:: _static/img/mlab_plots/tricont.png
 
 Surface Plots
 """""""""""""
 
-.. automethod:: gr.pygr.mlab.surface
+.. autofunction:: gr.pygr.mlab.surface
 .. image:: _static/img/mlab_plots/surface.png
 
-.. automethod:: gr.pygr.mlab.trisurf
+.. autofunction:: gr.pygr.mlab.trisurf
 .. image:: _static/img/mlab_plots/trisurf.png
 
-.. automethod:: gr.pygr.mlab.wireframe
+.. autofunction:: gr.pygr.mlab.wireframe
 .. image:: _static/img/mlab_plots/wireframe.png
 
 Heatmaps
 """"""""
 
-.. automethod:: gr.pygr.mlab.heatmap
+.. autofunction:: gr.pygr.mlab.heatmap
 .. image:: _static/img/mlab_plots/heatmap.png
 
-.. automethod:: gr.pygr.mlab.shade
+.. autofunction:: gr.pygr.mlab.shade
 .. image:: _static/img/mlab_plots/shade.png
 
 Images
 """"""
 
-.. automethod:: gr.pygr.mlab.imshow
+.. autofunction:: gr.pygr.mlab.imshow
 .. image:: _static/img/mlab_plots/imshow.png
 
 Isosurfaces
 """""""""""
 
-.. automethod:: gr.pygr.mlab.isosurface
+.. autofunction:: gr.pygr.mlab.isosurface
 .. image:: _static/img/mlab_plots/isosurface.png
 
 
 Attribute Functions
 ^^^^^^^^^^^^^^^^^^^
 
-.. automethod:: gr.pygr.mlab.title
-.. automethod:: gr.pygr.mlab.legend
-.. automethod:: gr.pygr.mlab.xlabel
-.. automethod:: gr.pygr.mlab.ylabel
-.. automethod:: gr.pygr.mlab.zlabel
-.. automethod:: gr.pygr.mlab.xlim
-.. automethod:: gr.pygr.mlab.ylim
-.. automethod:: gr.pygr.mlab.zlim
-.. automethod:: gr.pygr.mlab.xlog
-.. automethod:: gr.pygr.mlab.ylog
-.. automethod:: gr.pygr.mlab.zlog
-.. automethod:: gr.pygr.mlab.xflip
-.. automethod:: gr.pygr.mlab.yflip
-.. automethod:: gr.pygr.mlab.zflip
-.. automethod:: gr.pygr.mlab.rotation
-.. automethod:: gr.pygr.mlab.tilt
-.. automethod:: gr.pygr.mlab.colormap
+.. autofunction:: gr.pygr.mlab.title
+.. autofunction:: gr.pygr.mlab.legend
+.. autofunction:: gr.pygr.mlab.xlabel
+.. autofunction:: gr.pygr.mlab.ylabel
+.. autofunction:: gr.pygr.mlab.zlabel
+.. autofunction:: gr.pygr.mlab.xlim
+.. autofunction:: gr.pygr.mlab.ylim
+.. autofunction:: gr.pygr.mlab.zlim
+.. autofunction:: gr.pygr.mlab.xlog
+.. autofunction:: gr.pygr.mlab.ylog
+.. autofunction:: gr.pygr.mlab.zlog
+.. autofunction:: gr.pygr.mlab.xflip
+.. autofunction:: gr.pygr.mlab.yflip
+.. autofunction:: gr.pygr.mlab.zflip
+.. autofunction:: gr.pygr.mlab.rotation
+.. autofunction:: gr.pygr.mlab.tilt
+.. autofunction:: gr.pygr.mlab.colormap
 
 
 Control Functions
 ^^^^^^^^^^^^^^^^^
 
-.. automethod:: gr.pygr.mlab.figure
-.. automethod:: gr.pygr.mlab.subplot
-.. automethod:: gr.pygr.mlab.savefig
-.. automethod:: gr.pygr.mlab.hold
+.. autofunction:: gr.pygr.mlab.figure
+.. autofunction:: gr.pygr.mlab.subplot
+.. autofunction:: gr.pygr.mlab.savefig
+.. autofunction:: gr.pygr.mlab.hold
