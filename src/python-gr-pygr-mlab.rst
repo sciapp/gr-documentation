@@ -99,6 +99,12 @@ Isosurfaces
 .. autofunction:: gr.pygr.mlab.isosurface
 .. image:: _static/img/mlab_plots/isosurface.png
 
+Volume Rendering
+""""""""""""""""
+
+.. autofunction:: gr.pygr.mlab.volume
+.. image:: _static/img/mlab_plots/volume.png
+
 
 Attribute Functions
 ^^^^^^^^^^^^^^^^^^^
@@ -108,6 +114,7 @@ Attribute Functions
 .. autofunction:: gr.pygr.mlab.xlabel
 .. autofunction:: gr.pygr.mlab.ylabel
 .. autofunction:: gr.pygr.mlab.zlabel
+.. autofunction:: gr.pygr.mlab.dlabel
 .. autofunction:: gr.pygr.mlab.xlim
 .. autofunction:: gr.pygr.mlab.ylim
 .. autofunction:: gr.pygr.mlab.zlim
