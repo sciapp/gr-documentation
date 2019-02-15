@@ -21,6 +21,7 @@ Output Functions
 .. autofunction:: gr.polyline3d
 .. autofunction:: gr.axes3d
 .. autofunction:: gr.titles3d
+.. autofunction:: gr.volume
 .. autofunction:: gr.surface
 .. autofunction:: gr.contour
 .. autofunction:: gr.drawrect
