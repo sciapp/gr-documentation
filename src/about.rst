@@ -50,6 +50,7 @@ A simple *IPython* notebook example (converted to HTML5) can be found
    Patterns and Hatch Styles <patterns.rst>
    Line Types <linetypes.rst>
    Marker Types <markertypes.rst>
+   Fonts <fonts.rst>
    
 References
 ----------
