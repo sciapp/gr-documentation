@@ -89,7 +89,7 @@ The following table lists the supported fonts:
 .. |font_palatino_bold| image:: _static/img/fonts/PalatinoBold.png
    :scale: 100%
    :align: middle
-.. |font_palatino_bolditalic| image:: _static/img/fonts/PalatinoBolditalic.png
+.. |font_palatino_bold_italic| image:: _static/img/fonts/PalatinoBoldItalic.png
    :scale: 100%
    :align: middle
 .. |font_zapf_chancery_medium_italic| image:: _static/img/fonts/ZapfChanceryMediumItalic.png
@@ -158,7 +158,7 @@ The following table lists the supported fonts:
 +-------+------------------------------------+-------------------------------------------+
 + 128   + Palatino Bold                      + |font_palatino_bold|                      +
 +-------+------------------------------------+-------------------------------------------+
-+ 129   + Palatino Bolditalic                + |font_palatino_bolditalic|                +
++ 129   + Palatino Bold Italic               + |font_palatino_bold_italic|               +
 +-------+------------------------------------+-------------------------------------------+
 + 130   + Zapf Chancery Medium Italic        + |font_zapf_chancery_medium_italic|        +
 +-------+------------------------------------+-------------------------------------------+
