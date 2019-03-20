@@ -24,10 +24,13 @@ videoplugin  mp4 / 160             MP4
 videoplugin  webm / 161            WEBM
 videoplugin  ogg / 162             OGG
 gsplugin     bmp / 320             BMP
+cairoplugin  bmp / 145             BMP
 gsplugin     jpg / jpeg / 321      JPEG
+cairoplugin  jpg / jpeg / 144      JPEG
 gsplugin     png / 322             PNG
 cairoplugin  png / 140             PNG
 gsplugin     tif / tiff / 323      TIFF
+cairoplugin  tif / tiff / 146      TIFF
 figplugin    fig / 370             FIG
 svgplugin    svg / 382             SVG
 wmfplugin    wmf / 390             WMF
@@ -35,10 +38,21 @@ htmplugin    html / 430            HTML
 pgfplugin    pgf / 314             PGF
 ============ ===================== ================
 
-Both the **gsplugin** and the **cairplugin** can be used to create PNG files.
+Both the **gsplugin** and the **cairplugin** can be used to create PNG, JPEG,
+BMP and TIFF files.
 If both plugins are available, the **gsplugin** will be used by default, but
-the environment variable ``GKS_USE_CAIRO_PNG`` can be set to use the
+the environment variables ``GKS_USE_CAIRO_PNG``, ``GKS_USE_CAIRO_JPG``, ``GKS_USE_CAIRO_BMP`` or ``GKS_USE_CAIRO_TIF`` can be set to use the
 **cairoplugin** instead.
+
+.. note:: By now, the **cairoplugin** covers all output types of the
+   **gsplugin** with several advantages including support for transparency,
+   better performance and being part of our binary distribution. As a result,
+   we plan to make it the default for for PNG, JPEG, BMP and TIFF files in the
+   future.
+   
+   If you rely on any specific features of the **gsplugin** or cannot use the
+   **cairoplugin** for any reason, please let us know by opening an
+   `issue <https://github.com/sciapp/gr/issues>`_.
 
 Configuring Video Output Options
 ````````````````````````````````
