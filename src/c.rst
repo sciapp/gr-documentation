@@ -80,6 +80,10 @@ After installing GR, you can try it out by creating a simple plot:
        return 0;
    }
 
+To compile and link this example on Linux or macOS, you can run:
+``cc -I<grdir>/include -L<grdir>/lib -Wl,-rpath,<grdir>/lib -lGR example.c -o example``
+where you replace ``<grdir>`` with the path to your installation of GR.
+
 .. image:: _static/img/c_plots/plot_demo.png
 
 Tutorials
