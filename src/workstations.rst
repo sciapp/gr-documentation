@@ -1,3 +1,5 @@
+.. _workstation_types:
+
 Workstation Types
 -----------------
 
@@ -38,11 +40,14 @@ htmplugin    html / 430            HTML
 pgfplugin    pgf / 314             PGF
 ============ ===================== ================
 
+.. _cairoplugin_gsplugin:
+
 Both the **gsplugin** and the **cairplugin** can be used to create PNG, JPEG,
 BMP and TIFF files.
 If both plugins are available, the **gsplugin** will be used by default, but
-the environment variables ``GKS_USE_CAIRO_PNG``, ``GKS_USE_CAIRO_JPG``, ``GKS_USE_CAIRO_BMP`` or ``GKS_USE_CAIRO_TIF`` can be set to use the
-**cairoplugin** instead.
+the :ref:`environment variables <environment_variables>` ``GKS_USE_CAIRO_PNG``,
+``GKS_USE_CAIRO_JPG``, ``GKS_USE_CAIRO_BMP`` or ``GKS_USE_CAIRO_TIF`` can be
+set to use the **cairoplugin** instead.
 
 .. note:: By now, the **cairoplugin** covers all output types of the
    **gsplugin** with several advantages including support for transparency,
@@ -53,6 +58,8 @@ the environment variables ``GKS_USE_CAIRO_PNG``, ``GKS_USE_CAIRO_JPG``, ``GKS_US
    If you rely on any specific features of the **gsplugin** or cannot use the
    **cairoplugin** for any reason, please let us know by opening an
    `issue <https://github.com/sciapp/gr/issues>`_.
+
+.. _gks_video_opts:
 
 Configuring Video Output Options
 ````````````````````````````````

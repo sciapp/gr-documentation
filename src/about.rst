@@ -52,6 +52,7 @@ A simple *IPython* notebook example (converted to HTML5) can be found
    Marker Types <markertypes.rst>
    Fonts <fonts.rst>
    Encoding Support <encoding.rst>
+   Environment Variables <environment_variables.rst>
    
 References
 ----------
