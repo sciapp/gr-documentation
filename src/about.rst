@@ -51,6 +51,7 @@ A simple *IPython* notebook example (converted to HTML5) can be found
    Line Types <linetypes.rst>
    Marker Types <markertypes.rst>
    Fonts <fonts.rst>
+   Encoding Support <encoding.rst>
    
 References
 ----------
