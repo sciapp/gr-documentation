@@ -90,13 +90,14 @@ glplugin     420                   OpenGL
 Applications
 ^^^^^^^^^^^^
 
-============ ===================== ================
-Plugin       GKS_WSTYPE            Operating System
-============ ===================== ================
-*built-in*   211                   Linux
-*built-in*   41                    Windows
-quartzplugin 400                   macOS
-============ ===================== ================
+=============== ============ ===================== =======================
+Application     Plugin       GKS_WSTYPE            Operating System
+=============== ============ ===================== =======================
+gksqt           qt5plugin    411 / gksqt           Windows / Linux / macOS
+GKSTerm         quartzplugin 400 / quartz          macOS
+GKS 5 (X11)     x11plugin    211 / x11             Linux / macOS
+GKS 5 (Windows) *built-in*   41                    Windows
+=============== ============ ===================== =======================
 
 
 Special Workstation Types
