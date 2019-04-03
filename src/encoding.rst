@@ -12,6 +12,7 @@ input encoding using the ``GKS_ENCODING``
 Latin-1 and UTF-8.
 
 Some `workstation types <workstation_types>`_ lack any support for UTF-8 or
-Unicode in general (e.g. *pdf* and *ps*) and others are restricted to a subset
-of characters due to missing glyphs in the fonts distributed as part of GR
-(e.g. *cairo*).
+Unicode in general and convert all input strings to Latin-1 (e.g. *pdf* and
+*ps*) and others are restricted to a subset of characters due to missing glyphs
+in the fonts distributed as part of GR (e.g. *cairo*). We plan to address these
+issues in future releases.
