@@ -51,6 +51,9 @@ Attribute Functions
 .. autofunction:: gr.setfillintstyle
 .. autofunction:: gr.setfillstyle
 .. autofunction:: gr.setfillcolorind
+.. autofunction:: gr.setcolorrep
+.. autofunction:: gr.setcolormap
+.. autofunction:: gr.setcolormapfromrgb
 .. autofunction:: gr.setarrowstyle
 .. autofunction:: gr.setshadow
 .. autofunction:: gr.settransparency
@@ -81,7 +84,6 @@ Control Functions
 .. autofunction:: gr.endprint
 .. autofunction:: gr.begingraphics
 .. autofunction:: gr.endgraphics
-.. autofunction:: gr.setcolorrep
 .. autofunction:: gr.updategks
 .. autofunction:: gr.opengks
 .. autofunction:: gr.closegks
