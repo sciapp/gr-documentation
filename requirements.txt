@@ -17,6 +17,5 @@ six==1.12.0
 snowballstemmer==1.2.1
 Sphinx==1.8.5
 sphinx-rtd-theme==0.4.2
-urllib3==1.24.1
 -e git://github.com/bastikr/sphinx-julia.git#egg=Sphinx_Julia
 vcversioner==2.16.0.0
