@@ -76,6 +76,9 @@ For information on how to set an environment variable, see the sections below.
        Example: ``5``
    * - ``GKS_NO_EXIT_HANDLER``
      - Do not set an exit handler
+   * - ``GKS_DISABLE_PAGE_SUFFIX``
+     - | Do not add a page suffix to the file name when writing more than
+       | once to a file which does not natively support pagination
 
 Setting Environment Variables on macOS or Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
