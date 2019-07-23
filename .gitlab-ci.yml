@@ -1,6 +1,7 @@
 stages:
     - build
-    - upload
+    - build-docker
+    - deploy
 
 pages:
     stage: build
@@ -22,13 +23,35 @@ pages:
         paths:
         - public
 
-upload-pages:
-    stage: upload
-    image: ubuntu:18.04
+build-docker:
+    stage: build-docker
+    image: docker:stable
+    variables:
+        DOCKER_DRIVER: overlay
+    only:
+        - branches@Scientific-IT-Systems/gr-documentation
+        - tags@Scientific-IT-Systems/gr-documentation
+    services:
+        - docker:dind
+    script:
+        - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+        - if docker pull $CI_REGISTRY_IMAGE:latest; then docker tag $CI_REGISTRY_IMAGE:latest $CI_REGISTRY_IMAGE:previous; docker push $CI_REGISTRY_IMAGE:previous; fi
+        - docker build -t $CI_REGISTRY_IMAGE:latest .
+        - docker push $CI_REGISTRY_IMAGE:latest
+
+deploy:
+    stage: deploy
+    image: ubuntu:latest
     only:
         - master@Scientific-IT-Systems/gr-documentation
+        - tags@Scientific-IT-Systems/gr-documentation
     script:
-        - apt-get update -y
-        - apt-get install -y rsync sshpass
-        - cd public
-        - sshpass -p $RSYNC_PASSWORD rsync -av --delete --exclude downloads/ . rsync://$RSYNC_USERNAME@pgi-jcns.fz-juelich.de/gr-doc/
+        - apt update
+        - apt install -y ssh
+        - mkdir -p --mode=700 ~/.ssh/
+        - echo "$DEPLOYMENT_PRIVATE_KEY" > ~/.ssh/deployment_key
+        - chmod 400 ~/.ssh/deployment_key
+        - echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts
+        - chmod 400 ~/.ssh/known_hosts
+
+        - echo -e "$CI_JOB_TOKEN\n$CI_REGISTRY_IMAGE:latest\n$CI_PROJECT_NAME" | ssh -i ~/.ssh/deployment_key admin@iffweb.iff.kfa-juelich.de
