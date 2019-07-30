@@ -20,6 +20,8 @@ This will automatically install both the GR runtime and the Python wrapper. You 
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
+- Arch Linux:
+   ``pacman -S mesa qt5-base``
 - CentOS 6 / Other Linux distributions
    ``yum install libXt libXrender libXext Mesa-libGL qt-x11``
 

@@ -14,6 +14,8 @@ Debian           x86_64       `gr-latest-Debian-x86_64.tar.gz <https://gr-framew
 Ubuntu           x86_64       `gr-latest-Ubuntu-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Ubuntu-x86_64.tar.gz>`_
 CentOS 7         x86_64       `gr-latest-CentOS-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-CentOS-x86_64.tar.gz>`_
 CentOS 6         x86_64       `gr-latest-Linux-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Linux-x86_64.tar.gz>`_
+CentOS 6         i386         `gr-latest-Linux-i386.tar.gz <https://gr-framework.org/downloads/gr-latest-Linux-i386.tar.gz>`_
+Arch Linux       x86_64       `gr-latest-ArchLinux-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-ArchLinux-x86_64.tar.gz>`_
 Windows          x86_64       `gr-latest-Windows-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-x86_64.tar.gz>`_
 Windows          i686         `gr-latest-Windows-i686.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-i686.tar.gz>`_
 ================ ============ =======================================================================================================
@@ -28,6 +30,8 @@ You may need to install some additional dependencies on Linux:
    ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
 - openSUSE 42.3 / 15:
    ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
+- Arch Linux:
+   ``pacman -S mesa qt5-base``
 - CentOS 6
    ``yum install libXt libXrender libXext Mesa-libGL qt-x11``
 
