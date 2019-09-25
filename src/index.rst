@@ -19,3 +19,4 @@ representation of complex 3D scenes.
    tutorials/index.rst
    examples/index.rst
    development.rst
+   citations.rst
