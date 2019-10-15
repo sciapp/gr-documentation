@@ -77,8 +77,13 @@ For information on how to set an environment variable, see the sections below.
    * - ``GKS_NO_EXIT_HANDLER``
      - Do not set an exit handler
    * - ``GKS_DISABLE_PAGE_SUFFIX``
-     - | Do not add a page suffix to the file name when writing more than
-       | once to a file which does not natively support pagination
+     - | Do not add a page suffix to the file name when writing more
+       | than once to a file which does not natively support pagination.
+   * - ``GKS_DEFAULT_RESAMPLE_METHOD``
+     - | The default method for :ref:`resampling <resampling_methods>` image data in raster based
+       | workstation types. Can be ``nearest``, ``linear`` or ``lanczos``.
+
+       Example: ``nearest``
 
 Setting Environment Variables on macOS or Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
