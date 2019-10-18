@@ -11,6 +11,7 @@ Operating System Architecture
 ================ ============ =======================================================================================================
 macOS            x86_64       `gr-latest-Darwin-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Darwin-x86_64.tar.gz>`_
 Debian           x86_64       `gr-latest-Debian-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Debian-x86_64.tar.gz>`_
+Debian           armhf        `gr-latest-Debian-armhf.tar.gz <https://gr-framework.org/downloads/gr-latest-Debian-armhf.tar.gz>`_
 Ubuntu           x86_64       `gr-latest-Ubuntu-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Ubuntu-x86_64.tar.gz>`_
 CentOS 7         x86_64       `gr-latest-CentOS-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-CentOS-x86_64.tar.gz>`_
 CentOS 6         x86_64       `gr-latest-Linux-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Linux-x86_64.tar.gz>`_
