@@ -39,8 +39,11 @@ Attribute Functions
 .. autofunction:: gr.setlinewidth
 .. autofunction:: gr.setlinecolorind
 .. autofunction:: gr.setmarkertype
+.. autofunction:: gr.inqmarkertype
 .. autofunction:: gr.setmarkersize
+.. autofunction:: gr.inqmarkersize
 .. autofunction:: gr.setmarkercolorind
+.. autofunction:: gr.inqmarkercolorind
 .. autofunction:: gr.settextfontprec
 .. autofunction:: gr.setcharexpan
 .. autofunction:: gr.settextcolorind
@@ -57,6 +60,8 @@ Attribute Functions
 .. autofunction:: gr.setarrowstyle
 .. autofunction:: gr.setshadow
 .. autofunction:: gr.settransparency
+.. autofunction:: gr.setresamplemethod
+.. autofunction:: gr.inqresamplemethod
 
 Transformation Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^
