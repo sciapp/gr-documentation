@@ -768,6 +768,7 @@ WARN_LOGFILE           =
 INPUT                  = \
 	gr/lib/gr3/gr3.h \
 	gr/lib/gr3/gr3.c \
+	gr/lib/gr3/gr3_gr.c \
 	gr/lib/gr3/gr3_mc.c \
 	gr/lib/gr/gr.h \
 	gr/lib/gr/gr.c \
