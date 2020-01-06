@@ -54,6 +54,10 @@ Major contributors include the following (in alphabetical order):
 
   designed and implemented *GR3*
 
+**Jonas Ritz**
+
+  developed a software-renderer for *GR3*
+
 **Elmar Westphal**
 
   wrote the gr_textex routine

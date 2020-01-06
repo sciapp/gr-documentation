@@ -3,7 +3,7 @@ License
 
 The GR framework is licensed under the MIT License.
 
-    Copyright (c) 2012-2017: Josef Heinen, Florian Rhiem, Christian Felder, and other contributors:
+    Copyright (c) 2012-2020: Josef Heinen, Florian Rhiem, Christian Felder, and other contributors:
 
     http://gr-framework.org/contributors.html
 
