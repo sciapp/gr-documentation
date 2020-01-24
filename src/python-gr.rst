@@ -31,6 +31,7 @@ Output Functions
 .. autofunction:: gr.drawarrow
 .. autofunction:: gr.drawimage
 .. autofunction:: gr.mathtex
+.. autofunction:: gr.path
 
 Attribute Functions
 ^^^^^^^^^^^^^^^^^^^
@@ -62,6 +63,10 @@ Attribute Functions
 .. autofunction:: gr.settransparency
 .. autofunction:: gr.setresamplemethod
 .. autofunction:: gr.inqresamplemethod
+.. autofunction:: gr.setbordercolorind
+.. autofunction:: gr.inqbordercolorind
+.. autofunction:: gr.setborderwidth
+.. autofunction:: gr.inqborderwidth
 
 Transformation Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^
