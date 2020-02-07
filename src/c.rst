@@ -65,6 +65,31 @@ package manager will cope with package dependencies.
 Please follow the installation instructions for your operating system described
 `here <https://software.opensuse.org/download.html?project=science:gr-framework&package=python-gr>`_.
 
+We also provide Arch packages for C and Python GR on the `Arch User Repository <https://aur.archlinux.org>`_:
+
+============================================================================= =======================================
+AUR package name                                                              Description
+============================================================================= =======================================
+`gr-framework <https://aur.archlinux.org/packages/gr-framework/>`_            Latest stable version of C GR
+`gr-framework-git <https://aur.archlinux.org/packages/gr-framework-git/>`_    Latest development version of C GR
+`python-gr-framework <https://aur.archlinux.org/packages/gr-framework/>`_     Latest stable version of Python GR
+`python-gr-framework-git <https://aur.archlinux.org/packages/gr-framework/>`_ Latest development version of Python GR
+============================================================================= =======================================
+
+If you would like to generate video output, make sure the ``ffmpeg`` package is installed before getting any package
+from the AUR.
+
+You can either install these AUR packages manually (see the
+`Arch wiki <https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages>`_ for help) or by using an
+AUR helper like `yay <https://github.com/Jguer/yay>`_:
+
+.. code-block:: bash
+
+    yay -S python-gr-framework
+
+
+In this example, ``yay`` will install C GR (package ``gr-framework``) as an dependency automatically.
+
 Getting Started
 ---------------
 
