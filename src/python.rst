@@ -75,3 +75,4 @@ The Python API for GR consists of:
     python-gr-pygr.rst
     python-gr-pygr-mlab.rst
     python-gr3.rst
+    python-grm.rst

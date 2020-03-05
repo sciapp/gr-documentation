@@ -28,11 +28,15 @@ Major contributors include the following (in alphabetical order):
 
 **Marvin Goblet**
 
-  developed the the initial GKSTerm implementation
+  developed the initial GKSTerm implementation
 
 **Ingo Heimbach**
 
   implemented the GKS wxWidgets plugin
+
+**Maximilian Heuwes**
+
+  implemented the GRM wrapper for Python 3 and added imshow & isosurface to the GRM
 
 **Daniel Kaiser**
 

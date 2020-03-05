@@ -27,7 +27,9 @@ def get_example_filenames(examples_dir):
             name = name.replace('\\', '/')
             with open(filename, 'rb') as f:
                 content = f.read()
-            if content.startswith('#!/usr/bin/env python\n'.encode('ascii')):
+            if content.startswith('#!/usr/bin/env python\n'.encode('ascii')) or content.startswith(
+                '#!/usr/bin/env python3\n'.encode('ascii')
+            ):
                 yield filename, name
 
 
