@@ -45,11 +45,20 @@ Stem Plots
 .. autofunction:: gr.pygr.mlab.stem
 .. image:: _static/img/mlab_plots/stem.png
 
+Bar Plots
+"""""""""
+
+.. autofunction:: gr.pygr.mlab.bar
+.. image:: _static/img/mlab_plots/bar.png
+
 Histograms
 """"""""""
 
 .. autofunction:: gr.pygr.mlab.histogram
 .. image:: _static/img/mlab_plots/histogram.png
+
+.. autofunction:: gr.pygr.mlab.polar_histogram
+.. image:: _static/img/mlab_plots/polar_histogram.png
 
 .. autofunction:: gr.pygr.mlab.hexbin
 .. image:: _static/img/mlab_plots/hexbin.png
