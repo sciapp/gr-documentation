@@ -25,6 +25,10 @@ import vcversioner
 sys.path.append(os.path.abspath('.'))
 sys.path.append(os.path.abspath('ext'))
 
+# Skip runtime version checks to avoid issues with functools.partial usage in
+# the _require_runtime_version decorator used in python-gr
+os.environ['GR_SKIP_RUNTIME_VERSION_CHECK'] = '1'
+
 import gr
 
 # -- General configuration ------------------------------------------------
