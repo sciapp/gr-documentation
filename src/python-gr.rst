@@ -83,6 +83,20 @@ Transformation Functions
 .. autofunction:: gr.setspace
 .. autofunction:: gr.inqspace
 .. autofunction:: gr.setcoordxform
+.. autofunction:: gr.setprojectiontype
+.. autofunction:: gr.inqprojectiontype
+.. autofunction:: gr.setperspectiveprojection
+.. autofunction:: gr.inqperspectiveprojection
+.. autofunction:: gr.setorthographicprojection
+.. autofunction:: gr.inqorthographicprojection
+.. autofunction:: gr.settransformationparameters
+.. autofunction:: gr.inqtransformationparameters
+.. autofunction:: gr.camerainteraction
+.. autofunction:: gr.setwindow3d
+.. autofunction:: gr.inqwindow3d
+.. autofunction:: gr.setscalefactors3d
+.. autofunction:: gr.inqscalefactors3d
+.. autofunction:: gr.transformationinterfaceforrepl
 
 Control Functions
 ^^^^^^^^^^^^^^^^^
