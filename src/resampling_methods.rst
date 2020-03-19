@@ -16,7 +16,7 @@ The algorithm to be used can be set individually for four cases:
 
 To do so, the user can combine flags for each situation, e.g. ``GKS_K_DOWNSAMPLE_HORIZONTAL_LINEAR | GKS_K_DOWNSAMPLE_VERTICAL_LINEAR`` and pass the result to :c:func:`gr_setresamplemethod`. Alternatively, they can use a pre-combined flag such as ``GKS_K_RESAMPLE_LINEAR``.
 
-If no resampling method is selected, the default resampling method will be used. Usually, this will be the nearest neighbor algorithm, but this can be changed using the ``GKS_DEFAULT_RESAMPLE_METHOD`` :ref:`environment variable <environment variables>`.
+If no resampling method is selected, the default resampling method will be used. Usually, this will be the nearest neighbor algorithm, but this can be changed using the ``GKS_DEFAULT_RESAMPLE_METHOD`` :ref:`environment variable <environment_variables>`.
 
 .. note::
 
