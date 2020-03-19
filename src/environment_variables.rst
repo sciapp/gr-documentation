@@ -84,6 +84,8 @@ For information on how to set an environment variable, see the sections below.
        | workstation types. Can be ``nearest``, ``linear`` or ``lanczos``.
 
        Example: ``nearest``
+   * - ``GR_SKIP_RUNTIME_VERSION_CHECK``
+     - Skip runtime version checks in the gr Python package
 
 Setting Environment Variables on macOS or Linux
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
