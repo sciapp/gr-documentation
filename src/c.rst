@@ -128,6 +128,7 @@ The C API for GR consists of:
 
 .. toctree::
 
+    c-grm.rst
     c-gr.rst
     c-gr3.rst
     c-gks.rst

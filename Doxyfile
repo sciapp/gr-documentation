@@ -774,7 +774,12 @@ INPUT                  = \
 	gr/lib/gr/gr.c \
 	gr/lib/gr/interp2.c \
 	gr/lib/gks/gks.h \
-
+	gr/lib/grm/args.h \
+	gr/lib/grm/dump.h \
+	gr/lib/grm/event.h \
+	gr/lib/grm/interaction.h \
+	gr/lib/grm/net.h \
+	gr/lib/grm/plot.h \
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -1113,7 +1118,7 @@ INCLUDE_FILE_PATTERNS  =
 # recursively expanded use the := operator instead of the = operator.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-PREDEFINED             = GR3API=extern DLLEXPORT=extern
+PREDEFINED             = GR3API=extern DLLEXPORT=extern EXPORT=extern
 
 # If the MACRO_EXPANSION and EXPAND_ONLY_PREDEF tags are set to YES then this
 # tag can be used to specify a list of macro names that should be expanded. The
