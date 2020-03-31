@@ -1,7 +1,7 @@
 Fonts
 -----
 
-GR and GKS support a variety of fonts, identified by an index or a constant, e.g. ``101`` or ``gr.FONT_TIMES_ROMAN``. Depending on the `workstation type <workstations.html>`_, these fonts will either be rendered natively or using FreeType.
+GR and GKS support a variety of fonts, identified by an index or a constant, e.g. ``101`` or ``gr.FONT_TIMES_ROMAN``. Depending on the `workstation type <workstations.html>`_, these fonts will either be rendered natively, using FreeType or using custom path rendering.
 
 The following table lists the supported fonts:
 
@@ -98,6 +98,12 @@ The following table lists the supported fonts:
 .. |font_zapf_dingbats| image:: _static/img/fonts/ZapfDingbats.png
    :scale: 100%
    :align: middle
+.. |font_computer_modern| image:: _static/img/fonts/ComputerModern.png
+   :scale: 100%
+   :align: middle
+.. |font_dejavu_sans| image:: _static/img/fonts/DejaVuSans.png
+   :scale: 100%
+   :align: middle
    
 +-------+------------------------------------+-------------------------------------------+
 + Index + Name                               +                                           +
@@ -163,4 +169,8 @@ The following table lists the supported fonts:
 + 130   + Zapf Chancery Medium Italic        + |font_zapf_chancery_medium_italic|        +
 +-------+------------------------------------+-------------------------------------------+
 + 131   + Zapf Dingbats                      + |font_zapf_dingbats|                      +
++-------+------------------------------------+-------------------------------------------+
++ 232   + Computer Modern                    + |font_computer_modern|                    +
++-------+------------------------------------+-------------------------------------------+
++ 233   + DejaVu Sans                        + |font_dejavu_sans|                        +
 +-------+------------------------------------+-------------------------------------------+
