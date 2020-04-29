@@ -41,7 +41,7 @@ You may need to install some additional dependencies on Linux:
    X11, OpenGL and Qt 4 packages specific to your system.
 
 For other versions of GR, see the `downloads <https://gr-framework.org/downloads/>`_.
-For information on building the GR runtime yourself, see 
+For information on building the GR runtime yourself, see
 `Building the GR Runtime <building.html>`_.
 
 Docker and other headless Linux systems
@@ -88,7 +88,7 @@ AUR helper like `yay <https://github.com/Jguer/yay>`_:
     yay -S python-gr-framework
 
 
-In this example, ``yay`` will install C GR (package ``gr-framework``) as an dependency automatically.
+In this example, ``yay`` will install C GR (package ``gr-framework``) as a dependency automatically.
 
 Getting Started
 ---------------
