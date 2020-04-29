@@ -50,9 +50,11 @@ Docker and other headless Linux systems
 - GR does not rely on X11 for its non-interactive output formats, so you will
   not need the dependencies listed above on a headless system.
 - GR3 uses GLX for OpenGL context creation, which requires a connection to an X
-  server. If you are using a headless sytem, e.g. a Docker container, you can
-  use Xvfb or similar tools to start an X server that can be used by GR3,
-  although it may only provide software rendering.
+  server. If X, GLX or OpenGL is not available, GR3 will fall back to a
+  built-in software renderer which implements all GR3 functionality except for
+  volume rendering. If you are using a headless sytem, e.g. a Docker container,
+  and want to use :c:func:`gr_volume`, you can use Xvfb or similar tools to
+  start an X server that can be used by GR3.
 
 Linux packages
 ^^^^^^^^^^^^^^
