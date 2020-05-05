@@ -61,7 +61,7 @@ neither for the Matplotlib part nor for the *GR*/*GR3* part. The *GR* Matplotlib
 backend can be activated by setting the ``MPLBACKEND`` environment variable
 previous before starting Python::
 
-        % export MPLBACKEND=gr
+        % export MPLBACKEND=module://gr.matplotlib.backend_gr
         % python ...
 
 Even if you'd like to create animations no further module (like *Matplotlib*'s
@@ -94,7 +94,7 @@ To view the animation in a browser window, first start *GR*'s *Bottle* server::
 Then, open the above URL (http://127.0.0.1:8080/) in a browser and start
 the animation with the output redirected to the *GR*'s HTML5 device driver::
 
-        % export MPLBACKEND=gr
+        % export MPLBACKEND=module://gr.matplotlib.backend_gr
         % python -o html ...
 
 You can then watch the animation in your browser window.
