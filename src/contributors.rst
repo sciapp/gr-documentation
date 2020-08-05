@@ -30,7 +30,7 @@ Major contributors include the following (in alphabetical order):
 
   developed the initial GKSTerm implementation
 
-**Ingo Heimbach**
+**Ingo Meyer**
 
   implemented the GKS wxWidgets plugin
 
