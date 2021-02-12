@@ -19,6 +19,7 @@ CentOS 6         i386         `gr-latest-Linux-i386.tar.gz <https://gr-framework
 Arch Linux       x86_64       `gr-latest-ArchLinux-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-ArchLinux-x86_64.tar.gz>`_
 Windows          x86_64       `gr-latest-Windows-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-x86_64.tar.gz>`_
 Windows          i686         `gr-latest-Windows-i686.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-i686.tar.gz>`_
+Windows (MSVC)   x86_64       `gr-latest-Windows-x86_64-msvc.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-x86_64-msvc.tar.gz>`_
 ================ ============ =======================================================================================================
 
 You may need to install some additional dependencies on Linux:
