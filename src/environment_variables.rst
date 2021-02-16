@@ -62,6 +62,8 @@ For information on how to set an environment variable, see the sections below.
      - Use the **cairoplugin** for Tiff output instead of the **gsplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
+   * - ``GKS_PGF_ONLY_CONTENT``
+     - Do not write a full TeX document, instead write only definitions and TikZ picture
    * - ``GKS_VIDEO_OPTS``
      - Resolution and framerate when using the **videoplugin**
 
