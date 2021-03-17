@@ -22,6 +22,7 @@ Plugin       GKS_WSTYPE            File Type
 *built-in*   eps / 62              EPS
 videoplugin  gif / 130             GIF
 videoplugin  mov / 120             MOV
+videoplugin  mov / 121             HiDPI MOV
 videoplugin  mp4 / 160             MP4
 videoplugin  webm / 161            WEBM
 videoplugin  ogg / 162             OGG
@@ -62,6 +63,14 @@ following values:
 - ``<framerate>``
 - ``<width>x<height>``
 - ``<width>x<height>@<framerate>``
+
+mov video files can additionally be generated in HiDPI mode if supported by
+ffmpeg. This doubles the internal resolution while using the given resolution
+for playback size in supporting video players (primarily Apple QuickTime). To
+enable HiDPI mode for mov videos either use the ``GKS_WSTYPE`` 121 or append
+``@x2`` to the ``GKS_VIDEO_OPTS``, for example:
+
+- ``1920x1080@60@x2``
 
 Integrations
 ^^^^^^^^^^^^
