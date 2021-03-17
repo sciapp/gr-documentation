@@ -43,7 +43,7 @@ pgfplugin    pgf / 314             PGF
 
 .. _cairoplugin_gsplugin:
 
-Both the **cairoplugin** and the **grplugin** can be used to create PNG, JPEG,
+Both the **cairoplugin** and the **gsplugin** can be used to create PNG, JPEG,
 BMP and TIFF files.
 If both plugins are available, the **cairoplugin** will be used by default, but
 the :ref:`environment variables <environment_variables>` ``GKS_USE_GS_PNG``,
