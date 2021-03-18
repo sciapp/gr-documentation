@@ -46,20 +46,20 @@ For information on how to set an environment variable, see the sections below.
        See also: :ref:`encoding`
    * - ``GKS_DOUBLE_BUF``
      - Only draw when :c:func:`gr_updatews` is called
-   * - ``GKS_USE_CAIRO_BMP``
-     - Use the **cairoplugin** for BMP output instead of the **gsplugin**
+   * - ``GKS_USE_GS_BMP``
+     - Use the **gsplugin** for BMP output instead of the **cairoplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
-   * - ``GKS_USE_CAIRO_JPG``
-     - Use the **cairoplugin** for JPEG output instead of the **gsplugin**
+   * - ``GKS_USE_GS_JPG``
+     - Use the **gsplugin** for JPEG output instead of the **cairoplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
-   * - ``GKS_USE_CAIRO_PNG``
-     - Use the **cairoplugin** for PNG output instead of the **gsplugin**
+   * - ``GKS_USE_GS_PNG``
+     - Use the **gsplugin** for PNG output instead of the **cairoplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
-   * - ``GKS_USE_CAIRO_TIF``
-     - Use the **cairoplugin** for Tiff output instead of the **gsplugin**
+   * - ``GKS_USE_GS_TIF``
+     - Use the **gsplugin** for Tiff output instead of the **cairoplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
    * - ``GKS_PGF_ONLY_CONTENT``
