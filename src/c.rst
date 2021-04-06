@@ -66,7 +66,7 @@ Linux distributions using
 package manager will cope with package dependencies.
 
 Please follow the installation instructions for your operating system described
-`here <https://software.opensuse.org/download.html?project=science:gr-framework&package=python-gr>`_.
+`here <https://software.opensuse.org/download.html?project=science:gr-framework&package=gr>`_.
 
 We also provide Arch packages for C and Python GR on the `Arch User Repository <https://aur.archlinux.org>`_:
 
