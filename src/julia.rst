@@ -39,8 +39,8 @@ This will automatically install both the GR runtime and the Julia wrapper. You m
    relies on Qt 4 for the ``gksqt`` application, so you may need to install
    X11, OpenGL and Qt 4 packages specific to your system.
 
-On FreeBSD make sure to install the ``qt5`` package:
-   ``pkg install devel/qt5``
+On FreeBSD make sure to install the these packages:
+   ``pkg install libXt libXrender libXext mesa-libs qt5``
 
 For information on building the GR runtime yourself, see
 `Building the GR Runtime <building.html>`_.
