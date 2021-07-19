@@ -72,16 +72,19 @@ package manager will cope with package dependencies.
 Please follow the installation instructions for your operating system described
 `here <https://software.opensuse.org/download.html?project=science:gr-framework&package=gr>`_.
 
-We also provide Arch packages for C and Python GR on the `Arch User Repository <https://aur.archlinux.org>`_:
+We also provide Arch packages for C, Python and JavaScript GR on the `Arch User Repository
+<https://aur.archlinux.org>`_:
 
-============================================================================= =======================================
-AUR package name                                                              Description
-============================================================================= =======================================
-`gr-framework <https://aur.archlinux.org/packages/gr-framework/>`_            Latest stable version of C GR
-`gr-framework-git <https://aur.archlinux.org/packages/gr-framework-git/>`_    Latest development version of C GR
-`python-gr-framework <https://aur.archlinux.org/packages/gr-framework/>`_     Latest stable version of Python GR
-`python-gr-framework-git <https://aur.archlinux.org/packages/gr-framework/>`_ Latest development version of Python GR
-============================================================================= =======================================
+================================================================================ =======================================
+AUR package name                                                                 Description
+================================================================================ =======================================
+`gr-framework <https://aur.archlinux.org/packages/gr-framework/>`_               Latest stable version of C GR
+`gr-framework-git <https://aur.archlinux.org/packages/gr-framework-git/>`_       Latest development version of C GR
+`python-gr-framework <https://aur.archlinux.org/packages/gr-framework/>`_        Latest stable version of Python GR
+`python-gr-framework-git <https://aur.archlinux.org/packages/gr-framework/>`_    Latest development version of Python GR
+`gr-framework-js <https://aur.archlinux.org/packages/gr-framework-js/>`_         Latest stable version of `gr.js`
+`gr-framework-js-git <https://aur.archlinux.org/packages/gr-framework-js-git/>`_ Latest development version of `gr.js`
+================================================================================ =======================================
 
 If you would like to generate video output, make sure the ``ffmpeg`` package is installed before getting any package
 from the AUR.
