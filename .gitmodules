@@ -1,9 +1,9 @@
 [submodule "python-gr"]
 	path = python-gr
-	url = git@github.com:sciapp/python-gr.git
+	url = https://github.com/sciapp/python-gr.git
 [submodule "gr"]
 	path = gr
-	url = git@github.com:sciapp/gr.git
+	url = https://github.com/sciapp/gr.git
 [submodule "GR.jl"]
 	path = GR.jl
-	url = git@github.com:jheinen/GR.jl.git
+	url = https://github.com/jheinen/GR.jl.git
