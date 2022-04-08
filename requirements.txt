@@ -16,7 +16,7 @@ requests==2.25.1
 six==1.15.0
 snowballstemmer==2.1.0
 Sphinx==3.5.3
--e git://github.com/FlorianRhiem/sphinx-julia.git@ebc4f1ab9ca348616ffccf8c3db10792cdf5d5c8#egg=Sphinx_Julia
+git+https://github.com/FlorianRhiem/sphinx-julia.git@ebc4f1ab9ca348616ffccf8c3db10792cdf5d5c8#egg=Sphinx_Julia
 sphinx-rtd-theme==0.5.1
 sphinxcontrib-applehelp==1.0.2
 sphinxcontrib-devhelp==1.0.2
