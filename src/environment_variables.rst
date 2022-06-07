@@ -54,14 +54,30 @@ For information on how to set an environment variable, see the sections below.
      - Use the **gsplugin** for JPEG output instead of the **cairoplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
+   * - ``GKS_USE_AGG_JPG``
+     - Use the **aggplugin** for JPEG output instead of the **cairoplugin**
+
+       See also: :ref:`File Formats <cairoplugin_gsplugin>`
    * - ``GKS_USE_GS_PNG``
      - Use the **gsplugin** for PNG output instead of the **cairoplugin**
+
+       See also: :ref:`File Formats <cairoplugin_gsplugin>`
+   * - ``GKS_USE_AGG_PNG``
+     - Use the **aggplugin** for PNG output instead of the **cairoplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
    * - ``GKS_USE_GS_TIF``
      - Use the **gsplugin** for Tiff output instead of the **cairoplugin**
 
        See also: :ref:`File Formats <cairoplugin_gsplugin>`
+   * - ``GKS_QT_USE_CAIRO``
+     - Use the **cairoplugin** for rendering in the **qtplugin** and **gksqt**
+
+       See also: :ref:`Integrations <integrations>`
+   * - ``GKS_QT_USE_AGG``
+     - Use the **aggplugin** for rendering in the **qtplugin** and **gksqt**
+
+       See also: :ref:`Integrations <integrations>`
    * - ``GKS_PGF_ONLY_CONTENT``
      - Do not write a full TeX document, instead write only definitions and TikZ picture
    * - ``GKS_VIDEO_OPTS``

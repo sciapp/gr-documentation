@@ -5,7 +5,7 @@ stages:
 
 pages:
     stage: build
-    image: ubuntu:18.04
+    image: ubuntu:22.04
     only:
         - master
     script:
