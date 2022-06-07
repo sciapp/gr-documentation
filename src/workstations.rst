@@ -26,29 +26,34 @@ videoplugin  mov / 121             HiDPI MOV
 videoplugin  mp4 / 160             MP4
 videoplugin  webm / 161            WEBM
 videoplugin  ogg / 162             OGG
-gsplugin     bmp / 320             BMP
 cairoplugin  bmp / 145             BMP
-gsplugin     jpg / jpeg / 321      JPEG
+gsplugin     bmp / 320             BMP
+aggplugin    ppm / 170             PPM
 cairoplugin  jpg / jpeg / 144      JPEG
-gsplugin     png / 322             PNG
+gsplugin     jpg / jpeg / 321      JPEG
+aggplugin    jpg / jpeg / 172      JPEG
 cairoplugin  png / 140             PNG
-gsplugin     tif / tiff / 323      TIFF
+gsplugin     png / 322             PNG
+aggplugin    png / 171             PNG
 cairoplugin  tif / tiff / 146      TIFF
+gsplugin     tif / tiff / 323      TIFF
 figplugin    fig / 370             FIG
 svgplugin    svg / 382             SVG
 wmfplugin    wmf / 390             WMF
 htmplugin    html / 430            HTML
-pgfplugin    pgf / 314             PGF
+pgfplugin    pgf / 314             TEX
 ============ ===================== ================
 
 .. _cairoplugin_gsplugin:
 
 Both the **cairoplugin** and the **gsplugin** can be used to create PNG, JPEG,
-BMP and TIFF files.
-If both plugins are available, the **cairoplugin** will be used by default, but
-the :ref:`environment variables <environment_variables>` ``GKS_USE_GS_PNG``,
-``GKS_USE_GS_JPG``, ``GKS_USE_GS_BMP`` or ``GKS_USE_GS_TIF`` can be
-set to use the **gsplugin** instead.
+BMP and TIFF files. PNG and JPEG files can be created by the **aggplugin** as
+well.
+If it is available, the **cairoplugin** will be used by default, but the
+:ref:`environment variables <environment_variables>` ``GKS_USE_GS_PNG``,
+``GKS_USE_GS_JPG``, ``GKS_USE_GS_BMP`` or ``GKS_USE_GS_TIF`` can be set to use
+the **gsplugin** and ``GKS_USE_AGG_PNG`` or ``GKS_USE_AGG_JPG`` can be set to
+use the **aggplugin** instead.
 
 .. _gks_video_opts:
 
@@ -72,6 +77,8 @@ enable HiDPI mode for mov videos either use the ``GKS_WSTYPE`` 121 or append
 
 - ``1920x1080@60@x2``
 
+.. _integrations:
+
 Integrations
 ^^^^^^^^^^^^
 
@@ -80,11 +87,16 @@ Plugin       GKS_WSTYPE            Description
 ============ ===================== ================
 qtplugin     381                   Qt 4
 qt5plugin    381                   Qt 5
+qt6plugin    381                   Qt 6
 gtkplugin    371                   GTK+
 wxplugin     380                   wxWidgets
 glplugin     420                   OpenGL
 ============ ===================== ================
 
+By default the Qt-plugins use Qt's internal drawing functions. This behavior
+can be changed to use either cairo or agg to render the image by setting the
+:ref:`environment variables <environment_variables>` ``GKS_QT_USE_CAIRO`` or
+``GKS_QT_USE_AGG``.
 
 Applications
 ^^^^^^^^^^^^

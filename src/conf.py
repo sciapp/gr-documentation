@@ -308,5 +308,5 @@ breathe_default_project = "gr"
 
 
 def setup(app):
-    app.add_stylesheet('css/custom.css')
-    app.add_javascript('js/multi_language_code_blocks.js')
+    app.add_css_file('css/custom.css')
+    app.add_js_file('js/multi_language_code_blocks.js')
