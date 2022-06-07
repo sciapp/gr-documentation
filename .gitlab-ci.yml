@@ -50,4 +50,4 @@ deploy:
         - echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts
         - chmod 400 ~/.ssh/known_hosts
 
-        - echo -e "$CI_JOB_TOKEN\n$CI_REGISTRY_IMAGE:latest\n$CI_PROJECT_NAME" | ssh -i ~/.ssh/deployment_key admin@iffweb.iff.kfa-juelich.de
+        - echo -e "$CI_JOB_TOKEN\n$CI_REGISTRY_IMAGE:latest\n$CI_PROJECT_NAME" | ssh -i ~/.ssh/deployment_key administrator@iffweb.iff.kfa-juelich.de
