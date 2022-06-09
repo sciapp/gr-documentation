@@ -16,7 +16,7 @@ requests==2.27.1
 six==1.16.0
 snowballstemmer==2.2.0
 Sphinx==4.5.0
-git+https://github.com/danielkaiser/sphinx-julia.git@8590431a6d2be0e9d0ec180c4c9c147f3f8382de#egg=Sphinx_Julia
+git+https://github.com/danielkaiser/sphinx-julia.git@21805a92aaf250c6d8821d8262a71d32afdce60d#egg=Sphinx_Julia
 sphinx-rtd-theme==1.0.0
 sphinxcontrib-applehelp==1.0.2
 sphinxcontrib-devhelp==1.0.2
