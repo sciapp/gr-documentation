@@ -51,3 +51,22 @@ deploy:
         - chmod 400 ~/.ssh/known_hosts
 
         - echo -e "$CI_JOB_TOKEN\n$CI_REGISTRY_IMAGE:latest\n$CI_PROJECT_NAME" | ssh -i ~/.ssh/deployment_key administrator@iffweb.iff.kfa-juelich.de
+
+
+deploy-to-github:
+  stage: deploy
+  image: ubuntu:20.04
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - master@Scientific-IT-Systems/gr-documentation
+    - tags@Scientific-IT-Systems/gr-documentation
+  script:
+  - apt-get update
+  - apt-get install -y git
+  - mkdir --mode=700 ~/.ssh/
+  - (umask 0377 && echo "$SCIAPP_GR_DOCUMENTATION_PRIVATE_KEY" > ~/.ssh/id_rsa
+                && echo "github.com $GITHUB_HOST_KEY" >> ~/.ssh/known_hosts)
+  - git clone --mirror "$CI_REPOSITORY_URL" gr_documentation_mirror
+  - cd gr_documentation_mirror && git push --mirror git@github.com:sciapp/gr-documentation.git && cd -
+
