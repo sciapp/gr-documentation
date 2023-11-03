@@ -78,8 +78,15 @@ For information on how to set an environment variable, see the sections below.
      - Use the **aggplugin** for rendering in the **qtplugin** and **gksqt**
 
        See also: :ref:`Integrations <integrations>`
+
    * - ``GKS_PGF_ONLY_CONTENT``
      - Do not write a full TeX document, instead write only definitions and TikZ picture
+
+   * - ``GKS_PDF_PREVIEW_FIX``
+     - Render images using filled rectangles to workaround a problem with Apple's Preview app,
+       which generally uses bilinear interpolation when rendering images, resulting in blurred
+       output, e.g. when displaying heatmaps
+
    * - ``GKS_VIDEO_OPTS``
      - Resolution and framerate when using the **videoplugin**
 
