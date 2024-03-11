@@ -9,9 +9,9 @@ SPHINXBUILD := $(PYTHON) -m sphinx
 
 html: .FORCE
 	python3 -m venv $(VENVDIR)
-	$(PIP) install --upgrade pip wheel
+	$(PIP) install --upgrade pip wheel build
 	rm -rf python-gr/dist/
-	cd python-gr && $(PYTHON) setup.py sdist
+	cd python-gr && $(PYTHON) -m build --sdist
 	$(PIP) install python-gr/dist/gr-*.tar.gz
 	$(PIP) install -r requirements.txt
 	mkdir -p $(BUILDDIR)
