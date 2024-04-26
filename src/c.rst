@@ -10,16 +10,18 @@ You can manually install prebuilt binaries for the GR runtime or install a `Linu
 Operating System Architecture
 ================ ============ =======================================================================================================
 macOS            x86_64       `gr-latest-Darwin-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Darwin-x86_64.tar.gz>`_
+macOS            aarch64      `gr-latest-Darwin-aarch64.tar.gz <https://gr-framework.org/downloads/gr-latest-Darwin-aarch64.tar.gz>`_
+macOS            universal    `gr-latest-Darwin-universal.tar.gz <https://gr-framework.org/downloads/gr-latest-Darwin-universal.tar.gz>`_
 Debian           x86_64       `gr-latest-Debian-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Debian-x86_64.tar.gz>`_
+Debian           aarch64      `gr-latest-Debian-aarch64.tar.gz <https://gr-framework.org/downloads/gr-latest-Debian-aarch64.tar.gz>`_
 Debian           armhf        `gr-latest-Debian-armhf.tar.gz <https://gr-framework.org/downloads/gr-latest-Debian-armhf.tar.gz>`_
 Ubuntu           x86_64       `gr-latest-Ubuntu-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Ubuntu-x86_64.tar.gz>`_
 CentOS 7         x86_64       `gr-latest-CentOS-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-CentOS-x86_64.tar.gz>`_
-CentOS 6         x86_64       `gr-latest-Linux-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Linux-x86_64.tar.gz>`_
-CentOS 6         i386         `gr-latest-Linux-i386.tar.gz <https://gr-framework.org/downloads/gr-latest-Linux-i386.tar.gz>`_
+CentOS 7         i386         `gr-latest-Linux-i386.tar.gz <https://gr-framework.org/downloads/gr-latest-Linux-i386.tar.gz>`_
 Arch Linux       x86_64       `gr-latest-ArchLinux-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-ArchLinux-x86_64.tar.gz>`_
 FreeBSD          x86_64       `gr-latest-FreeBSD-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-FreeBSD-x86_64.tar.gz>`_
-Windows          x86_64       `gr-latest-Windows-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-x86_64.tar.gz>`_
-Windows          i686         `gr-latest-Windows-i686.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-i686.tar.gz>`_
+Windows (MinGW)  x86_64       `gr-latest-Windows-x86_64.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-x86_64.tar.gz>`_
+Windows (MinGW)  i686         `gr-latest-Windows-i686.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-i686.tar.gz>`_
 Windows (MSVC)   x86_64       `gr-latest-Windows-x86_64-msvc.tar.gz <https://gr-framework.org/downloads/gr-latest-Windows-x86_64-msvc.tar.gz>`_
 ================ ============ =======================================================================================================
 
