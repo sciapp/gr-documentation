@@ -78,7 +78,8 @@ copyright = '2011 - {} Josef Heinen and the GR development team'.format(datetime
 runtime_version = vcversioner.find_version(root='../gr').version
 python_version = vcversioner.find_version(root='../python-gr').version
 julia_version = vcversioner.find_version(root='../GR.jl').version
-version = 'Runtime: {}<br />Python: {}<br />Julia: {}'.format(runtime_version, python_version, julia_version)
+rust_version = vcversioner.find_version(root='../grs').version
+version = 'Runtime: {}<br />Python: {}<br />Julia: {}<br />Rust: {}'.format(runtime_version, python_version, julia_version, rust_version)
 # The full version, including alpha/beta/rc tags.
 release = runtime_version
 

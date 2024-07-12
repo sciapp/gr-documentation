@@ -16,6 +16,7 @@ representation of complex 3D scenes.
    python.rst
    julia.rst
    c.rst
+   rust.rst
    tutorials/index.rst
    examples/index.rst
    development.rst
