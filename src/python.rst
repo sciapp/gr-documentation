@@ -12,25 +12,21 @@ GR is available on `PyPI <https://pypi.python.org/pypi/gr/>`_ and we recommend i
 
 This will automatically install both the GR runtime and the Python wrapper. You may need to install some additional dependencies on Linux:
 
-- Debian/Ubuntu:
-   ``apt install libxt6 libxrender1 libxext6 libgl1-mesa-glx libqt5widgets5``
-- CentOS 7:
-   ``yum install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
-- Fedora 28:
-   ``dnf install libXt libXrender libXext mesa-libGL qt5-qtbase-gui``
-- openSUSE 42.3 / 15:
-   ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt5Widgets5``
+- Debian:
+   ``apt install libxt6 libxrender1 libxext6 libgl1-mesa-glx libqt6widgets6``
+- Ubuntu:
+   ``apt install libxt6 libxrender1 libxext6 libglx-mesa0 libqt6widgets6``
+- CentOS / Fedora / Rocky Linux:
+   ``yum install libXt libXrender libXext mesa-libGL qt6-qtbase-gui``
+- openSUSE:
+   ``zypper install libXt6 libXrender1 libXext6 Mesa-libGL1 libQt6Widgets6``
 - Arch Linux:
-   ``pacman -S mesa qt5-base``
-- CentOS 6 / Other Linux distributions
-   ``yum install libXt libXrender libXext Mesa-libGL qt-x11``
+   ``pacman -S mesa qt6-base``
 
-   **Note:** The CentOS 6 build is used for other Linux distributions and
-   relies on Qt 4 for the ``gksqt`` application, so you may need to install
-   X11, OpenGL and Qt 4 packages specific to your system.
+**Note**: Depending on the Linux flavor you are using, the package names may differ from the ones mentioned here. This particularly applies to the Qt versions used.
 
 On FreeBSD make sure to install the these packages:
-   ``pkg install libXt libXrender libXext mesa-libs qt5``
+   ``pkg install libXt libXrender libXext mesa-libs qt6``
 
 For information on building the GR runtime yourself, see
 `Building the GR Runtime <building.html>`_.
