@@ -45,6 +45,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
     'sphinx.ext.mathjax',
+    'sphinxcontrib.jquery',
     'sphinxjulia.juliadomain',
     'sphinxjulia.juliaautodoc',
     'breathe',
