@@ -5,6 +5,7 @@ Installation
 ------------
 
 #. `Install GR <c.html#installation>`_
+#. In your Rust project, issue the command ``cargo add gr``
 #. Set the ``GRLIB`` environment variable to the path of *GR*'s ``lib`` directory / folder
 
    - It should contain ``.lib``, ``.dylib`` or ``.so`` files
