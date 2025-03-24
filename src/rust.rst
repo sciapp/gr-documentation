@@ -17,12 +17,22 @@ Installation
      - ``/usr/local/gr`` (ie. implicit ``GRLIB=/usr/local/gr/lib``)
    - This variable is only needed at compile-time
 
-#. The crate's build-script outputs a path as ``cargo:lib_dir``
+#. Your Rust program will need to dynamically load *GR* libraries! **Make them accessible!**
 
-   - The Rust program will need to load libraries from that path! **Make it accessible!**
-     You may want to put this into your ``PATH`` or your binaries' rpaths.
-   - On Windows this is **not** the same as ``GRLIB``!
-     It will point to the ``bin`` folder, which contains the ``.dll`` files.
+   - Ensure *GR*'s library files are found by your OS's dynamic loader.
+     If that's already the case, you don't have to do anything.
+   - You may need to edit your ``PATH`` (Windows), ``LD_LIBRARY_PATH`` (Linux), ``DYLD_LIBRARY_PATH`` (Mac) or your binaries' rpaths.
+   - On Windows, the required path is not the same as ``GRLIB``!
+     It should point to the ``bin`` folder, which contains the ``.dll`` files.
+     Alternatively, you can just copy the ``.dll`` files next to your ``.exe``.
+   - On Linux and Mac, you can set the rpath when building an executable from a Rust crate like this:
+
+     .. code-block:: sh
+
+        RUSTFLAGS="-C link-arg=-Wl,-rpath,/my/path/to/gr/lib" cargo build
+        ./target/debug/mybinaryname  # or run it using `cargo run` above
+
+     This is useful if *GR* isn't found normally, but the resulting binary shouldn't be distributed.
 
 Getting Started
 ---------------
