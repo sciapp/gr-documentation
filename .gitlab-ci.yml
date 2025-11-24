@@ -27,7 +27,7 @@ pages:
 
 build-docker:
     stage: build-docker
-    image: docker:stable
+    image: docker:latest
     only:
         - branches@Scientific-IT-Systems/gr-documentation
         - tags@Scientific-IT-Systems/gr-documentation
