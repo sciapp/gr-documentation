@@ -1,4 +1,4 @@
 GR Reference
 ------------
 
-.. jl:autofile:: GR.jl/src/GR.jl
+.. jl:autofile:: GR.jl/GR/src/GR.jl
