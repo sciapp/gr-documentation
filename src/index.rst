@@ -18,6 +18,7 @@ representation of complex 3D scenes.
    c.rst
    rust.rst
    tutorials/index.rst
+   grplot/index.rst
    examples/index.rst
    development.rst
    citations.rst
