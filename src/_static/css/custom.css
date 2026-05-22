@@ -57,3 +57,7 @@ dl.simple > dt > cite,
 dl.simple > dt > strong {
 	padding-left: 5px;
 }
+
+td p {
+	text-wrap-mode: wrap;
+}
