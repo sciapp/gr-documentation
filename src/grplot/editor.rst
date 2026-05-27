@@ -50,7 +50,7 @@ The toolbar is part of the GRPlot widget. This allows you to quickly change cert
 +------------------+---------------------------------------------------------------------------------------------------+
 | |colormap|       | The color map used can be changed.                                                                |
 +------------------+---------------------------------------------------------------------------------------------------+
-| |text_color_ind| | Change the text color.                                                                            |
+| |text_color_ind| | Change the color or the scaling of the text.                                                      |
 +------------------+---------------------------------------------------------------------------------------------------+
 | |disable_grid|   | This is used to enable or disable the grid in two-dimensional plots.                              |
 +------------------+---------------------------------------------------------------------------------------------------+
