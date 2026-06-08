@@ -12,7 +12,7 @@ or right-click and drag a box. You can also move the coordinate system window ar
 Hovering over a data point will show the x- and y-values, as well as the label or z-data, if applicable. In addition, if
 you press the Shift key, all y-data and labels/z-data at that specific x-value will be shown inside the tooltip.
 
-|tooltip|
+|tooltip| |shift|
 
 The view can be reset using the ``r`` key or by double-clicking.
 
@@ -149,6 +149,9 @@ element in the tree view opens the corresponding element edit window, while the 
 .. |move| image:: images/editor/move.png
           :width: 49%
 .. |tooltip| image:: images/editor/tooltip.png
+             :width: 49%
+.. |shift| image:: images/editor/shift.png
+           :width: 49%
 .. |zoom| image:: images/editor/zoom.png
           :width: 49%
 .. |algorithm| image:: images/icons/algorithm.png
