@@ -30,8 +30,10 @@ is a header entry like the one in the previous example, GRPlot will always treat
 ``legend_line:1`` is used. In this case, the previous labels will be replaced.
 
 Every other line in the file includes data values, and blank lines can be ignored by setting ``ignore_blank_lines:1``.
-Data items are separated by a tab character (``\t``). Depending on the plot type, the data is interpreted differently.
-The following list shows how data is treated for different plot types:
+Data items must be separated by one of these symbols (``,``, ``;``, ``|``, `` ``, ``\t``), and this symbol must remain
+consistent throughout the dataset. The program will automatically determine the delimiter using the first line that
+is not part of the header. Depending on the plot type, the data is interpreted differently. The following list shows how
+data is treated for different plot types:
 
 - contour_, contourf_, heatmap_, imshow_, marginal_heatmap_, surface_, wireframe_: The expected data is a matrix. Each
   element of the matrix is displayed according to its position within the matrix. These elements are interpreted as
