@@ -332,6 +332,18 @@ In this case, the data file is stem_. More information's about the format of the
 
 |line3|
 
+Another common use of a line plot is to display time data. For these GRPlot applies some defaults such as
+``keep_aspect_ratio:0``, ``line_spec:+-`` and sets every time columns as ``x_columns`` while the rest are set as
+``y_columns``. In this special case, parameters such as ``x_range`` and ``x_lim`` also require time-based entries.
+Furthermore, it is not possible to include non-time-based x-values within the data. The following example uses the
+blood_pressure_ file.
+
+.. code-block:: bash
+
+   grplot blood_pressure.csv
+
+|line4|
+
 Following parameters can be used:
 
 :ref:`bottom <link-bottom>`, :ref:`columns <link-columns>`, :ref:`error <link-error>`,
@@ -341,13 +353,13 @@ Following parameters can be used:
 :ref:`int_limits_high <link-intlimitshigh>`, :ref:`int_limits_low <link-intlimitslow>`,
 :ref:`join_plots <link-joinplots>`, :ref:`keep_aspect_ratio <link-keepaspectratio>`, :ref:`kind <link-kind>`,
 :ref:`left <link-left>`, :ref:`legend <link-legend>`, :ref:`legend_line <link-legendline>`,
-:ref:`line_spec <link-linespec>`, :ref:`location <link-location>`, :ref:`marker_type <link-markertype>`,
-:ref:`orientation <link-orientation>`, :ref:`right <link-right>`, :ref:`title <link-title>`, :ref:`top <link-top>`,
-:ref:`twin_x <link-twinx>`, :ref:`twin_y <link-twiny>`, :ref:`x_columns <link-xcolumns>`, :ref:`x_flip <link-xflip>`,
-:ref:`x_grid <link-xgrid>`, :ref:`x_label <link-xlabel>`, :ref:`x_lim <link-xlim>`, :ref:`x_log <link-xlog>`,
-:ref:`x_range <link-xrange>`, :ref:`xye_file <link-xyefile>`, :ref:`y_columns <link-ycolumns>`,
-:ref:`y_flip <link-yflip>`, :ref:`y_grid <link-ygrid>`, :ref:`y_label <link-ylabel>`, :ref:`y_lim <link-ylim>`,
-:ref:`y_log <link-ylog>`, :ref:`y_range <link-yrange>`
+:ref:`line_spec <link-linespec>`, :ref:`location <link-location>`, :ref:`marker_size <link-markersize>`,
+:ref:`marker_type <link-markertype>`, :ref:`orientation <link-orientation>`, :ref:`right <link-right>`,
+:ref:`title <link-title>`, :ref:`top <link-top>`, :ref:`twin_x <link-twinx>`, :ref:`twin_y <link-twiny>`,
+:ref:`x_columns <link-xcolumns>`, :ref:`x_flip <link-xflip>`, :ref:`x_grid <link-xgrid>`, :ref:`x_label <link-xlabel>`,
+:ref:`x_lim <link-xlim>`, :ref:`x_log <link-xlog>`, :ref:`x_range <link-xrange>`, :ref:`xye_file <link-xyefile>`,
+:ref:`y_columns <link-ycolumns>`, :ref:`y_flip <link-yflip>`, :ref:`y_grid <link-ygrid>`, :ref:`y_label <link-ylabel>`,
+:ref:`y_lim <link-ylim>`, :ref:`y_log <link-ylog>`, :ref:`y_range <link-yrange>`
 
 line3
 `````
@@ -512,11 +524,11 @@ Following parameters can be used:
 :ref:`clip_negative <link-clipnegative>`, :ref:`columns <link-columns>`, :ref:`file <link-file>`,
 :ref:`grplot <link-grplot>`, :ref:`ignore_blank_lines <link-ignoreblanklines>`, :ref:`join_plots <link-joinplots>`,
 :ref:`kind <link-kind>`, :ref:`legend <link-legend>`, :ref:`legend_line <link-legendline>`,
-:ref:`line_spec <link-linespec>`, :ref:`location <link-location>`, :ref:`marker_type <link-markertype>`,
-:ref:`r_flip <link-rflip>`, :ref:`r_lim <link-rlim>`, :ref:`r_log <link-rlog>`, :ref:`theta_flip <link-thetaflip>`,
-:ref:`theta_data_lim <link-thetadatalim>`, :ref:`theta_lim <link-thetalim>`, :ref:`title <link-title>`,
-:ref:`x_columns <link-xcolumns>`, :ref:`x_label <link-xlabel>`, :ref:`y_columns <link-ycolumns>`,
-:ref:`y_label <link-ylabel>`
+:ref:`line_spec <link-linespec>`, :ref:`location <link-location>`, :ref:`marker_size <link-markersize>`,
+:ref:`marker_type <link-markertype>`, :ref:`r_flip <link-rflip>`, :ref:`r_lim <link-rlim>`, :ref:`r_log <link-rlog>`,
+:ref:`theta_flip <link-thetaflip>`, :ref:`theta_data_lim <link-thetadatalim>`, :ref:`theta_lim <link-thetalim>`,
+:ref:`title <link-title>`, :ref:`x_columns <link-xcolumns>`, :ref:`x_label <link-xlabel>`,
+:ref:`y_columns <link-ycolumns>`, :ref:`y_label <link-ylabel>`
 
 polar_scatter
 `````````````
@@ -537,11 +549,11 @@ Following parameters can be used:
 :ref:`clip_negative <link-clipnegative>`, :ref:`columns <link-columns>`, :ref:`file <link-file>`,
 :ref:`grplot <link-grplot>`, :ref:`ignore_blank_lines <link-ignoreblanklines>`, :ref:`join_plots <link-joinplots>`,
 :ref:`kind <link-kind>`, :ref:`legend <link-legend>`, :ref:`legend_line <link-legendline>`,
-:ref:`line_spec <link-linespec>`, :ref:`location <link-location>`, :ref:`marker_type <link-markertype>`,
-:ref:`r_flip <link-rflip>`, :ref:`r_lim <link-rlim>`, :ref:`r_log <link-rlog>`, :ref:`theta_flip <link-thetaflip>`,
-:ref:`theta_data_lim <link-thetadatalim>`, :ref:`theta_lim <link-thetalim>`, :ref:`title <link-title>`,
-:ref:`x_columns <link-xcolumns>`, :ref:`x_label <link-xlabel>`, :ref:`y_columns <link-ycolumns>`,
-:ref:`y_label <link-ylabel>`
+:ref:`line_spec <link-linespec>`, :ref:`location <link-location>`, :ref:`marker_size <link-markersize>`,
+:ref:`marker_type <link-markertype>`, :ref:`r_flip <link-rflip>`, :ref:`r_lim <link-rlim>`, :ref:`r_log <link-rlog>`,
+:ref:`theta_flip <link-thetaflip>`, :ref:`theta_data_lim <link-thetadatalim>`, :ref:`theta_lim <link-thetalim>`,
+:ref:`title <link-title>`, :ref:`x_columns <link-xcolumns>`, :ref:`x_label <link-xlabel>`,
+:ref:`y_columns <link-ycolumns>`, :ref:`y_label <link-ylabel>`
 
 scatter
 ```````
@@ -571,13 +583,13 @@ Following parameters can be used:
 :ref:`ignore_blank_lines <link-ignoreblanklines>`, :ref:`join_plots <link-joinplots>`,
 :ref:`keep_aspect_ratio <link-keepaspectratio>`, :ref:`kind <link-kind>`, :ref:`left <link-left>`,
 :ref:`legend <link-legend>`, :ref:`legend_line <link-legendline>`, :ref:`line_spec <link-linespec>`,
-:ref:`location <link-location>`, :ref:`marker_type <link-markertype>`, :ref:`orientation <link-orientation>`,
-:ref:`right <link-right>`, :ref:`title <link-title>`, :ref:`top <link-top>`, :ref:`twin_x <link-twinx>`,
-:ref:`twin_y <link-twiny>`, :ref:`x_columns <link-xcolumns>`, :ref:`x_flip <link-xflip>`, :ref:`x_grid <link-xgrid>`,
-:ref:`x_label <link-xlabel>`, :ref:`x_lim <link-xlim>`, :ref:`x_log <link-xlog>`, :ref:`x_range <link-xrange>`,
-:ref:`xye_file <link-xyefile>`, :ref:`y_columns <link-ycolumns>`, :ref:`y_flip <link-yflip>`,
-:ref:`y_grid <link-ygrid>`, :ref:`y_label <link-ylabel>`, :ref:`y_lim <link-ylim>`, :ref:`y_log <link-ylog>`,
-:ref:`y_range <link-yrange>`
+:ref:`location <link-location>`, :ref:`marker_size <link-markersize>`, :ref:`marker_type <link-markertype>`,
+:ref:`orientation <link-orientation>`, :ref:`right <link-right>`, :ref:`title <link-title>`, :ref:`top <link-top>`,
+:ref:`twin_x <link-twinx>`, :ref:`twin_y <link-twiny>`, :ref:`x_columns <link-xcolumns>`, :ref:`x_flip <link-xflip>`,
+:ref:`x_grid <link-xgrid>`, :ref:`x_label <link-xlabel>`, :ref:`x_lim <link-xlim>`, :ref:`x_log <link-xlog>`,
+:ref:`x_range <link-xrange>`, :ref:`xye_file <link-xyefile>`, :ref:`y_columns <link-ycolumns>`,
+:ref:`y_flip <link-yflip>`, :ref:`y_grid <link-ygrid>`, :ref:`y_label <link-ylabel>`, :ref:`y_lim <link-ylim>`,
+:ref:`y_log <link-ylog>`, :ref:`y_range <link-yrange>`
 
 scatter3
 ````````
@@ -734,12 +746,12 @@ Following parameters can be used:
 
 :ref:`cmap <link-cmap>`, :ref:`columns <link-columns>`, :ref:`consecutive_colorbars <link-colorbars>`,
 :ref:`file <link-file>`, :ref:`grplot <link-grplot>`, :ref:`ignore_blank_lines <link-ignoreblanklines>`,
-:ref:`join_plots <link-joinplots>`, :ref:`keep_aspect_ratio <link-keepaspectratio>`, :ref:`kind <link-kind>`, :ref:`levels <link-levels>`,
-:ref:`x_columns <link-xcolumns>`, :ref:`x_flip <link-xflip>`, :ref:`x_grid <link-xgrid>`, :ref:`x_label <link-xlabel>`,
-:ref:`x_lim <link-xlim>`, :ref:`x_log <link-xlog>`, :ref:`x_range <link-xrange>`, :ref:`xyz_file <link-xyzfile>`,
-:ref:`y_columns <link-ycolumns>`, :ref:`y_flip <link-yflip>`, :ref:`y_grid <link-ygrid>`, :ref:`y_label <link-ylabel>`,
-:ref:`y_lim <link-ylim>`, :ref:`y_log <link-ylog>`, :ref:`y_range <link-yrange>`, :ref:`z_lim <link-zlim>`,
-:ref:`z_log <link-zlog>`, :ref:`z_range <link-zrange>`
+:ref:`join_plots <link-joinplots>`, :ref:`keep_aspect_ratio <link-keepaspectratio>`, :ref:`kind <link-kind>`,
+:ref:`levels <link-levels>`, :ref:`x_columns <link-xcolumns>`, :ref:`x_flip <link-xflip>`, :ref:`x_grid <link-xgrid>`,
+:ref:`x_label <link-xlabel>`, :ref:`x_lim <link-xlim>`, :ref:`x_log <link-xlog>`, :ref:`x_range <link-xrange>`,
+:ref:`xyz_file <link-xyzfile>`, :ref:`y_columns <link-ycolumns>`, :ref:`y_flip <link-yflip>`,
+:ref:`y_grid <link-ygrid>`, :ref:`y_label <link-ylabel>`, :ref:`y_lim <link-ylim>`, :ref:`y_log <link-ylog>`,
+:ref:`y_range <link-yrange>`, :ref:`z_lim <link-zlim>`, :ref:`z_log <link-zlog>`, :ref:`z_range <link-zrange>`
 
 trisurface
 ``````````
@@ -1027,6 +1039,7 @@ Following parameters can be useful for it:
 .. |line2| image:: images/kinds/line_2.png
              :width: 49%
 .. |line3| image:: images/kinds/line_3.png
+.. |line4| image:: images/kinds/line_4.png
 .. |line3d_1| image:: images/kinds/line3d_1.png
 .. |marginal_heatmap1| image:: images/kinds/marginal_heatmap1.png
                        :width: 49%
@@ -1120,4 +1133,5 @@ Following parameters can be useful for it:
 .. _volume: https://gr-framework.org/downloads/grplot/example_data/volume.dat
 .. _mixed_series: https://gr-framework.org/downloads/grplot/example_data/mixed_series.dat
 .. _mixed_series_contour: https://gr-framework.org/downloads/grplot/example_data/mixed_series_contour.dat
+.. _blood_pressure: https://gr-framework.org/downloads/grplot/example_data/blood_pressure.csv
 .. _data_file: /grplot/data_files.html

@@ -251,6 +251,9 @@ by ``{}`` and the parameters are separated by ``,``, with no whitespace characte
 |                              | to ``line``, the side plots only respect a specific row or column of the data.        |
 |                              | Restricted to marginal_heatmap_.                                                      |
 +------------------------------+---------------------------------------------------------------------------------------+
+| .. _link-markersize:         | This parameter defines the size of the visualized data points.                        |
+| ``marker_size``              |                                                                                       |
++------------------------------+---------------------------------------------------------------------------------------+
 | .. _link-markertype:         | This parameter defines the style of the visualized data points. The effect on the     |
 | ``marker_type``              | numbers is the same as for gr_setmarkertype_.                                         |
 +------------------------------+---------------------------------------------------------------------------------------+
