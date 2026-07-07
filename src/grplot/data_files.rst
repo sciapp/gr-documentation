@@ -84,12 +84,58 @@ data is treated for different plot types:
   :ref:`key-value pair section <link-error>`. Another option allows the user to define which columns include the x-, y-
   (weights) and error values. For this, the ``x_columns``, ``y_columns``, and ``error_columns`` parameters can be used.
 
+- molecule_: The expected data comprises at least four columns. The first column displays the element number or symbol,
+  and the next three columns define the x, y and z-positions. If the element is specified by a number,
+  :ref:`molecule_file <link-moleculefile>` must be set to 1. Another three columns can be used to define the spin
+  direction, which is required if :ref:`spin_style:1 <link-spinstyle>` is set. The next three columns can be used to
+  define a custom colour for each element entry.
+
 Plot types that expect the same data shape as other plot types can be converted using an interactive menu.
 
 Following parameters can be useful for it:
 
 :ref:`columns <link-columns>`, :ref:`file <link-file>`, :ref:`x_columns <link-xcolumns>`,
 :ref:`xye_file <link-xyefile>`, :ref:`xyz_file <link-xyzfile>`, :ref:`y_columns <link-ycolumns>`
+
+
+XSF (Crystal or Molecule)
+-------------------------
+
+The xsf-file adhere to a specific schema, which is less flexible than the previous CSV format. The first row determines
+what is displayed in the file. In the example, ``CRYSTAL`` defines a crystal structure. The next rows, starting with a
+``PRIMVEC`` row, define the unit cell via three vectors. This unit cell is then used for the periodicity. The next
+section starts with a ``PRIMCOORD`` row, followed by a row that defines the number of elements. These elements continue
+in the following rows until an empty line is encountered. Everything until ``BEGIN_DATAGRID_2D_A`` is ignored. The next
+row defines the shape of the data grid, followed by a 3x3 matrix. The first row defines a position, while the next two
+define a plane on which a contour plot can be displayed. Each row until ``END_DATAGRID_2D`` defines one value of the
+data grid.
+
+The following example shows a simplified version of the xsf schema while the elements between ``<>`` needs to be
+replaced:
+
+.. code-block:: bash
+
+     CRYSTAL
+     PRIMVEC
+    <vector1>
+    <vector2>
+    <vector3>
+     PRIMCOORD
+               <element-nr>  1
+      <element_nr> <x> <y> <z>
+
+     BEGIN_BLOCK_DATAGRID_2D
+     plot
+     BEGIN_DATAGRID_2D_A
+         <x-shape>     <y-shape>
+       <xyz pos>
+       <vector1>
+       <vector2>
+     <value1>
+     <value2>
+     <...>
+     END_DATAGRID_2D
+     END_BLOCK_DATAGRID_2D
 
 .. _contour: /grplot/plot_types.html#contour
 .. _contourf: /grplot/plot_types.html#contourf
@@ -118,3 +164,4 @@ Following parameters can be useful for it:
 .. _shade: /grplot/plot_types.html#shade
 .. _tricontour: /grplot/plot_types.html#tricontour
 .. _trisurface: /grplot/plot_types.html#trisurface
+.. _molecule: /grplot/plot_types.html#molecule

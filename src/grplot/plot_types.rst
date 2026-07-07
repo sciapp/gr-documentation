@@ -422,6 +422,36 @@ Following parameters can be used:
 :ref:`y_lim <link-ylim>`, :ref:`y_log <link-ylog>`, :ref:`y_range <link-yrange>`, :ref:`z_lim <link-zlim>`,
 :ref:`z_log <link-zlog>`, :ref:`z_range <link-zrange>`
 
+molecule
+````````
+
+A molecule is a three-dimensional construct for visualizing complex structures such as crystal lattice. To create an
+molecule from the command line, the ``kind`` parameter must be set to ``molecule``. In this example, the data files are
+molecule_1_ and molecule_2_.
+More information's about the format of these files can be found under data_file_.
+
+.. code-block:: bash
+
+   grplot molecule.xyz kind:molecule molecule_file:1
+
+With additional ``spin_style:1`` the spheres gets replaced by spins if the data contains information about the spin
+direction;
+
+|molecule1| |molecule2|
+
+.. code-block:: bash
+
+   grplot molecule.xfs kind:molecule
+
+|molecule3|
+
+Following parameters can be used:
+
+:ref:`connection_threshold <link-connection_threshold>`, :ref:`file <link-file>`, :ref:`grplot <link-grplot>`,
+:ref:`ignore_blank_lines <link-ignoreblanklines>`,  :ref:`join_plots <link-joinplots>`, :ref:`kind <link-kind>`,
+:ref:`molecule_file <link-moleculefile>`, :ref:`rotation <link-rotation>`, :ref:`spin_style <link-spinstyle>`,
+:ref:`tilt <link-tilt>`, :ref:`title <link-title>`
+
 pie
 ```
 
@@ -1045,6 +1075,11 @@ Following parameters can be useful for it:
                        :width: 49%
 .. |marginal_heatmap2| image:: images/kinds/marginal_heatmap2.png
                        :width: 49%
+.. |molecule1| image:: images/kinds/molecule1.png
+                       :width: 49%
+.. |molecule2| image:: images/kinds/molecule2.png
+                       :width: 49%
+.. |molecule3| image:: images/kinds/molecule3.png
 .. |pie1| image:: images/kinds/pie1.png
 .. |polar_heatmap1| image:: images/kinds/polar_heatmap1.png
                     :width: 49%
@@ -1134,4 +1169,6 @@ Following parameters can be useful for it:
 .. _mixed_series: https://gr-framework.org/downloads/grplot/example_data/mixed_series.dat
 .. _mixed_series_contour: https://gr-framework.org/downloads/grplot/example_data/mixed_series_contour.dat
 .. _blood_pressure: https://gr-framework.org/downloads/grplot/example_data/blood_pressure.csv
+.. _molecule1: https://gr-framework.org/downloads/grplot/example_data/molecule.xyz
+.. _molecule2: https://gr-framework.org/downloads/grplot/example_data/molecule.xsf
 .. _data_file: /grplot/data_files.html
