@@ -2,9 +2,9 @@ Key-Value Pairs
 ===============
 
 The following table lists all the keys that can be used on the command line with GRPlot. They can also be put inside the
-data file, preceded by a ``#``. Some of these keys can be used for every plot type, while the use of others depends on
-whether the data sets are two or three dimensional. There are also keys that only work in combination with a specific
-plot type.
+csv data file, preceded by a ``#``. Some of these keys can be used for every plot type, while the use of others depends
+on whether the data sets are two or three dimensional. There are also keys that only work in combination with a
+specific plot type.
 
 All parameters are separated by a space. Some parameters are more complex than others. These parameters represent
 containers inside GRM. Container parameters follow a different syntax to normal parameters. The parameters inside the
@@ -66,6 +66,10 @@ by ``{}`` and the parameters are separated by ``,``, with no whitespace characte
 | ``columns``                  | include all columns. To draw all columns from A to B, use A:B. A is necessary even if |
 |                              | you want to draw all the lines from B to the end. To select more than one specific    |
 |                              | column, use a comma as the separator, with no whitespace.                             |
++------------------------------+---------------------------------------------------------------------------------------+
+| .. _link-connectionthreshold:| The single atoms that make up a molecule can be connected by tubes. By default, the   |
+| ``connection_threshold``     | covalent radius is used to determine which atoms are connected. This parameter enables|
+|                              | a distance to be set that is used to calculate the connections.                       |
 +------------------------------+---------------------------------------------------------------------------------------+
 | .. _link-colorbars:          | This allows the same colour bar to be forced onto all plots that share the same type  |
 | ``consecutive_colorbars``    | of coordinate system. Therefore, the maximum and minimum values of all matching types |
@@ -181,6 +185,7 @@ by ``{}`` and the parameters are separated by ``,``, with no whitespace characte
 |                              | - isosurface_                                                                         |
 |                              | - line_                                                                               |
 |                              | - marginal_heatmap_                                                                   |
+|                              | - molecule_                                                                           |
 |                              | - polar_heatmap_                                                                      |
 |                              | - polar_histogram_                                                                    |
 |                              | - polar_line_                                                                         |
@@ -257,6 +262,9 @@ by ``{}`` and the parameters are separated by ``,``, with no whitespace characte
 | .. _link-markertype:         | This parameter defines the style of the visualized data points. The effect on the     |
 | ``marker_type``              | numbers is the same as for gr_setmarkertype_.                                         |
 +------------------------------+---------------------------------------------------------------------------------------+
+| .. _link-moleculefile:       | This parameter indicates that the data describes a molecule. It is needed if the      |
+| ``molecule_file``            | molecule is defined in a xyz-file. If a xfs-file is used, the parameter isn't needed. |
++------------------------------+---------------------------------------------------------------------------------------+
 | .. _link-numbins:            | This parameter defines the number of bins representing a hexagonal cell in the plot.  |
 | ``num_bins``                 | The default value is 40. Restricted to hexbin_, histogram_ and polar_histogram_.      |
 +------------------------------+---------------------------------------------------------------------------------------+
@@ -310,6 +318,12 @@ by ``{}`` and the parameters are separated by ``,``, with no whitespace characte
 | .. _link-rotation:           | This parameter specifies the counter-clockwise rotation angle, in degrees, of the     |
 | ``rotation``                 | displayed data. This parameter must be set to an integer or double value. The default |
 |                              | setting is no rotation. Restricted to isosurface_.                                    |
++------------------------------+---------------------------------------------------------------------------------------+
+| .. _link-skiplines:          | This parameter determines whether any leading lines of the data file will be skipped, |
+| ``skip_lines``               | and if so, how many.                                                                  |
++------------------------------+---------------------------------------------------------------------------------------+
+| .. _link-spinstyle:          | This parameter determines whether the molecule uses spheres or spins to display single|
+| ``spin_style``               | atoms.                                                                                |
 +------------------------------+---------------------------------------------------------------------------------------+
 | .. _link-stairs:             | If this parameter is enabled, only the outlines of the bins are drawn. The value can  |
 | ``stairs``                   | be either 0 or 1. Restricted to polar_histogram_.                                     |

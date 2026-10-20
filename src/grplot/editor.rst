@@ -67,7 +67,7 @@ other raster and vector graphics formats, including (pure) PNG, JPEG, PDF and SV
 |file_menu|
 
 The toolbar and the option to move elements inside the editor can be deactivated via the Modi submenu.
-The grid can also be made selectable inside the editor.
+The grid can also be made selectable inside the editor. Animations are also possible with this menu.
 
 |modi_menu|
 
